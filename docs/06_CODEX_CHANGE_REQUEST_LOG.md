@@ -153,3 +153,13 @@ Log numerado das mudancas pedidas a partir desta etapa do projeto.
 **Objetivo:** melhorar a leitura da marca e deixar o atendimento do site mais claro e mais orientado para conversao.
 
 **Status:** concluido
+
+## 014
+
+**Pedido:** concluir push e deploy na Vercel sem carregar peso desnecessario para a publicacao.
+
+**Acao:** criado `.vercelignore` para excluir do deploy os arquivos originais pesados que nao sao usados pela interface, mantendo apenas as midias otimizadas em producao.
+
+**Objetivo:** reduzir o volume do pacote enviado para a Vercel e aumentar a chance de deploy estavel.
+
+**Status:** concluido
