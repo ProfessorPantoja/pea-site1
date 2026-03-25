@@ -81,6 +81,10 @@ body::before {
     background-color: rgba(255, 255, 255, 0.88);
   }
 
+  .hover-lift {
+    @apply transition-all duration-500 hover:-translate-y-3 hover:shadow-glow;
+  }
+
   .section-tag {
     @apply inline-flex items-center rounded-full bg-white px-3 py-1 text-xs font-bold uppercase tracking-[0.22em] text-ink-soft;
     background-color: rgba(255, 255, 255, 0.85);
@@ -96,17 +100,27 @@ body::before {
   }
 
   .reveal-ready {
+    will-change: transform, opacity, filter;
+  }
+
+  html.motion-enabled .reveal-ready:not(.is-visible) {
     opacity: 0;
-    transform: translateY(30px) scale(0.985);
+    transform: translateY(54px) scale(0.94);
+    filter: blur(14px);
+  }
+
+  html.motion-enabled .reveal-ready {
     transition:
-      opacity 720ms var(--ease-out),
-      transform 920ms var(--ease-out);
+      opacity 780ms var(--ease-out),
+      transform 1080ms var(--ease-out),
+      filter 1080ms var(--ease-out);
     transition-delay: var(--delay, 0ms);
   }
 
-  .reveal-ready.is-visible {
+  html.motion-enabled .reveal-ready.is-visible {
     opacity: 1;
     transform: none;
+    filter: blur(0);
   }
 
   .glass-panel {
@@ -145,5 +159,6 @@ body::before {
   .reveal-ready {
     opacity: 1;
     transform: none;
+    filter: none;
   }
 }

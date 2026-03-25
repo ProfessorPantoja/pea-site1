@@ -35,13 +35,13 @@ export default {
       },
       keyframes: {
         float: {
-          '0%, 100%': { transform: 'translate3d(0, 0, 0)' },
-          '50%': { transform: 'translate3d(0, -12px, 0)' },
+          '0%, 100%': { transform: 'translate3d(0, 0, 0) rotate(0deg)' },
+          '50%': { transform: 'translate3d(0, -18px, 0) rotate(1.5deg)' },
         },
         pulseRing: {
           '0%': { transform: 'scale(0.92)', opacity: '0.22' },
-          '70%': { transform: 'scale(1.08)', opacity: '0' },
-          '100%': { transform: 'scale(1.12)', opacity: '0' },
+          '70%': { transform: 'scale(1.16)', opacity: '0' },
+          '100%': { transform: 'scale(1.22)', opacity: '0' },
         },
         marquee: {
           '0%': { transform: 'translateX(0)' },

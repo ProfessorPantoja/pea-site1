@@ -53,7 +53,7 @@ import { proofMetrics, proofTiles } from '../../data/site';
           class="reveal-ready grid gap-4 sm:grid-cols-3"
         >
           {proofMetrics.map((metric) => (
-            <article class="surface-card px-5 py-6 text-center">
+            <article class="surface-card hover-lift px-5 py-6 text-center">
               <div class="text-2xl font-black uppercase tracking-[0.16em] text-rose sm:text-3xl">
                 {metric.value}
               </div>
@@ -67,7 +67,7 @@ import { proofMetrics, proofTiles } from '../../data/site';
             <article
               data-reveal
               style={`--delay:${index * 90 + 220}ms`}
-              class="reveal-ready surface-card h-full p-6"
+              class="reveal-ready surface-card hover-lift h-full p-6"
             >
               <span class="section-tag">PeA</span>
               <h3 class="mt-5 text-xl font-bold tracking-[-0.04em] text-ink">{tile.title}</h3>

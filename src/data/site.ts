@@ -29,6 +29,15 @@ export const heroStats = [
   { value: 'IA + networking', label: 'conteudo e conexao real' },
 ] as const;
 
+export const heroRibbon = [
+  'Networking de verdade',
+  'Conhecimento pratico',
+  'Experiencia memoravel',
+  'Demo de IA ao vivo',
+  'Cabo Frio, RJ',
+  'Energia alta do inicio ao fim',
+] as const;
+
 export const pillars = [
   {
     title: 'Acesso',

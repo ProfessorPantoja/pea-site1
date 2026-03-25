@@ -1,5 +1,5 @@
 ---
-import { eventMeta, heroStats } from '../../data/site';
+import { eventMeta, heroRibbon, heroStats } from '../../data/site';
 ---
 
 <section id="evento" class="section-space relative overflow-hidden pt-32 sm:pt-36">
@@ -8,7 +8,7 @@ import { eventMeta, heroStats } from '../../data/site';
 
   <div class="shell">
     <div class="grid items-center gap-12 lg:grid-cols-[minmax(0,1.15fr)_minmax(320px,0.85fr)]">
-      <div class="space-y-8">
+      <div class="min-w-0 space-y-8">
         <div data-reveal style="--delay: 80ms" class="reveal-ready space-y-5">
           <span class="eyebrow">{eventMeta.editionLabel}</span>
           <h1 class="section-heading max-w-4xl">
@@ -48,7 +48,7 @@ import { eventMeta, heroStats } from '../../data/site';
         >
           {heroStats.map((item, index) => (
             <article
-              class="surface-card relative overflow-hidden px-5 py-5"
+              class="surface-card hover-lift relative overflow-hidden px-5 py-5"
               style={`--delay:${index * 80}ms`}
             >
               <div class="absolute right-0 top-0 h-24 w-24 -translate-y-10 translate-x-10 rounded-full bg-gradient-to-br from-rose-soft/20 to-sky-soft/20"></div>
@@ -61,8 +61,8 @@ import { eventMeta, heroStats } from '../../data/site';
         </div>
       </div>
 
-      <div data-reveal style="--delay: 180ms" class="reveal-ready">
-        <div class="relative" data-pointer-parallax>
+      <div data-reveal style="--delay: 180ms" class="reveal-ready min-w-0">
+        <div class="relative min-w-0" data-pointer-parallax>
           <div class="absolute -left-8 top-8 hidden rounded-full bg-white/80 px-4 py-3 text-xs font-bold uppercase tracking-[0.2em] text-ink-soft shadow-soft lg:block">
             Energia real
           </div>
@@ -78,7 +78,7 @@ import { eventMeta, heroStats } from '../../data/site';
               <img
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnQjwCdcNu6-p8asohb_pcqk2myDgdjEYIGl337AqE88md4WS79UhJxl1klGScBbiVv_GI54tMa97XopLyy45dyTSy01PloGV8j9kLxrY2chIXYmGqKYpmS6-feoXAS03kJ2HzIIa-fp1Acj9zTOpTsBIy-gP3gGYgDo3k_y5V9aLc48z6Yq9sCM-ioW7S6dZjMCRbGTKHSfRYDV7G9Dz1O3ON8ErgLW1SoQpnWID1EtROXKF4wRS1pRBfuuyy7Q3pDwvudTiPTgT2"
                 alt="Grupo de pessoas em um ambiente de evento, sorrindo e conversando."
-                class="aspect-[4/4.7] w-full rounded-[1.7rem] object-cover sm:aspect-[4/4.4]"
+                class="aspect-[4/4.7] w-full rounded-[1.7rem] object-cover animate-float-slow sm:aspect-[4/4.4]"
               />
             </div>
 
@@ -92,6 +92,25 @@ import { eventMeta, heroStats } from '../../data/site';
                 <span class="rounded-2xl bg-surface px-3 py-2">Comida liberada</span>
                 <span class="rounded-2xl bg-surface px-3 py-2">Energia alta</span>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          data-reveal
+          style="--delay: 360ms"
+          class="reveal-ready glass-panel max-w-full overflow-hidden py-4"
+        >
+          <div class="w-full overflow-hidden">
+            <div class="flex w-fit min-w-max items-center gap-3 animate-marquee pr-3">
+              {[...heroRibbon, ...heroRibbon].map((item, index) => (
+                <span class="flex items-center gap-3" aria-hidden={index >= heroRibbon.length}>
+                  <span class="rounded-full bg-ink px-3 py-2 text-[0.68rem] font-extrabold uppercase tracking-[0.22em] text-white">
+                    {item}
+                  </span>
+                  <span class="h-2.5 w-2.5 rounded-full bg-gradient-to-r from-rose to-sky"></span>
+                </span>
+              ))}
             </div>
           </div>
         </div>
