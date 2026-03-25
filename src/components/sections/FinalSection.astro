@@ -15,7 +15,12 @@ import { eventMeta } from '../../data/site';
           As vagas sao limitadas. Entre em contato e garanta seu lugar no Pessoas em Acao.
         </p>
         <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <a href={eventMeta.whatsappUrl} target="_blank" rel="noreferrer" class="cta-primary">
+          <a
+            href={eventMeta.whatsappTicketUrl}
+            target="_blank"
+            rel="noreferrer"
+            class="cta-primary"
+          >
             Garantir minha vaga no WhatsApp
           </a>
           <a href={eventMeta.instagramUrl} target="_blank" rel="noreferrer" class="cta-secondary">
@@ -28,11 +33,13 @@ import { eventMeta } from '../../data/site';
     <footer class="mt-10 rounded-[2rem] bg-white/70 px-6 py-8 shadow-soft ring-1 ring-white/70 backdrop-blur">
       <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
         <div class="flex items-center gap-4">
-          <img
-            src="/fotos/logo-PeA-fundo-branco.webp"
-            alt="Logo do Pessoas em Acao"
-            class="h-14 w-14 rounded-full bg-white object-contain p-1 ring-1 ring-rose/10"
-          />
+          <span class="flex h-14 w-14 items-center justify-center overflow-hidden rounded-full bg-white ring-1 ring-rose/10">
+            <img
+              src="/fotos/logo-PeA-fundo-branco.webp"
+              alt="Logo do Pessoas em Acao"
+              class="h-full w-full scale-[1.19] object-cover"
+            />
+          </span>
           <div>
             <div class="font-display text-2xl font-black tracking-[-0.04em] text-ink">
               {eventMeta.name}
@@ -48,7 +55,12 @@ import { eventMeta } from '../../data/site';
             {eventMeta.instagramHandle}
           </a>
           <a href={`mailto:${eventMeta.email}`} class="hover:text-rose">{eventMeta.email}</a>
-          <a href={eventMeta.whatsappUrl} target="_blank" rel="noreferrer" class="hover:text-rose">
+          <a
+            href={eventMeta.whatsappSupportUrl}
+            target="_blank"
+            rel="noreferrer"
+            class="hover:text-rose"
+          >
             Contato via WhatsApp
           </a>
           <span>Landing page oficial da edicao atual</span>

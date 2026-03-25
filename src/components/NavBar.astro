@@ -8,11 +8,13 @@ import { eventMeta, navLinks } from '../data/site';
 >
   <div class="shell flex items-center justify-between gap-4 py-4">
     <a href="#evento" class="flex items-center gap-3">
-      <img
-        src="/fotos/logo-PeA-fundo-branco.webp"
-        alt="Logo do Pessoas em Acao"
-        class="h-11 w-11 rounded-full bg-white object-contain p-0.5 ring-1 ring-rose/10"
-      />
+      <span class="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full bg-white ring-1 ring-rose/10">
+        <img
+          src="/fotos/logo-PeA-fundo-branco.webp"
+          alt="Logo do Pessoas em Acao"
+          class="h-full w-full scale-[1.19] object-cover"
+        />
+      </span>
       <span class="font-display text-lg font-extrabold tracking-[-0.04em] text-ink sm:text-xl">
         {eventMeta.name}
       </span>
@@ -29,7 +31,12 @@ import { eventMeta, navLinks } from '../data/site';
       ))}
     </nav>
 
-    <a href={eventMeta.whatsappUrl} target="_blank" rel="noreferrer" class="cta-primary px-5 py-3 text-[0.72rem]">
+    <a
+      href={eventMeta.whatsappTicketUrl}
+      target="_blank"
+      rel="noreferrer"
+      class="cta-primary px-5 py-3 text-[0.72rem]"
+    >
       Garantir vaga
     </a>
   </div>

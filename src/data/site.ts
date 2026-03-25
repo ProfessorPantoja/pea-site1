@@ -10,8 +10,10 @@ export const eventMeta = {
   instagramHandle: '@pessoas.em.acao.oficial',
   instagramUrl: 'https://www.instagram.com/pessoas.em.acao.oficial/',
   email: 'pessoas.em.acao.oficial@gmail.com',
-  whatsappUrl:
-    'https://wa.me/5522999999999?text=Quero%20garantir%20minha%20vaga%20no%20Pessoas%20em%20Acao',
+  whatsappTicketUrl:
+    'https://wa.me/5522998946111?text=Ola%2C%20vim%20do%20site%20e%20quero%20garantir%20minha%20vaga%20no%20Pessoas%20em%20Acao.',
+  whatsappSupportUrl:
+    'https://wa.me/5522998946111?text=Ola%2C%20vim%20do%20site%20e%20gostaria%20de%20falar%20com%20alguem%20para%20entender%20melhor%20o%20evento.',
 };
 
 export const navLinks = [

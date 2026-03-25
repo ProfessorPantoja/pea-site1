@@ -130,3 +130,26 @@ Log numerado das mudancas pedidas a partir desta etapa do projeto.
 **Objetivo:** deixar claro no atendimento que o contato veio da landing page, melhorando contexto e conversao.
 
 **Status:** concluido
+
+## 012
+
+**Pedido:** manter o tamanho externo da logo, mas aumentar um pouco a imagem interna para melhorar leitura visual.
+
+**Acao:** ajustado o render da logo no header e no footer para preservar o circulo externo e ampliar apenas o conteudo interno em cerca de `12%`.
+
+**Objetivo:** melhorar presenca e legibilidade da marca sem mexer no espacamento ja aprovado.
+
+**Status:** concluido
+
+## 013
+
+**Pedido:** aumentar mais a presenca interna da logo e trocar os contatos gerais do site para o novo numero de WhatsApp, com mensagens melhores para vaga e atendimento.
+
+**Acao:** ampliado o conteudo interno da logo em mais um passo e substituidos os links gerais de WhatsApp pelo numero `22 99894-6111`, com dois fluxos separados:
+
+- vaga: `Ola, vim do site e quero garantir minha vaga no Pessoas em Acao.`
+- atendimento: `Ola, vim do site e gostaria de falar com alguem para entender melhor o evento.`
+
+**Objetivo:** melhorar a leitura da marca e deixar o atendimento do site mais claro e mais orientado para conversao.
+
+**Status:** concluido

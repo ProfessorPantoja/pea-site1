@@ -28,11 +28,16 @@ import { eventMeta, heroRibbon, heroStats } from '../../data/site';
         </div>
 
         <div data-reveal style="--delay: 220ms" class="reveal-ready flex flex-col gap-4 sm:flex-row">
-          <a href={eventMeta.whatsappUrl} target="_blank" rel="noreferrer" class="cta-primary breathe">
+          <a
+            href={eventMeta.whatsappTicketUrl}
+            target="_blank"
+            rel="noreferrer"
+            class="cta-primary breathe"
+          >
             Garantir minha vaga
           </a>
           <a
-            href={eventMeta.whatsappUrl}
+            href={eventMeta.whatsappSupportUrl}
             target="_blank"
             rel="noreferrer"
             class="cta-secondary"
