@@ -79,22 +79,19 @@ export const hosts = [
     name: 'Marceni',
     role: 'Psicologa, palestrante principal e alma do evento',
     body: 'Conduz a experiencia com foco em conexao, emocao e movimento. O evento gira ao redor da energia que ela cria no ambiente.',
-    image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuClcl0DG3cbzgjHhQI27VZK-XTlt9CJfqxphe5fNWw1lxYEbBjErrOYqYs8jD2BrEc9LmASbVUqPVWdZzfaoWEMPKkovGxGwJtQeNWrRPKDzme6xeczLJKRxYLiB01tJ-r62-zr7mV3QXB4_HNB9_OIFF8El5duWt3BaHCrZ8b16mUytloE4ywZ8_PJyOTVDC1wHaTphbcNF6Oh3ns1KVuvlHPhJ4FDy5pjQ7PxE0q5RnUi6Ul_-Oo6qctDwJ-L--KyNZcOeS8iP8TD',
+    image: '/fotos/Marceni.png',
   },
   {
     name: 'Isabela',
     role: 'Palestra sobre Lei da Atracao e construcao de clima',
     body: 'Ajuda a construir a atmosfera, a organizacao e a energia do encontro para que a experiencia seja leve, humana e memoravel.',
-    image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuD8x2yKtzEDlc7KMrhoEmcmGkN-hL2cmmDxz-JN75mTJxIqRDE7MoqXmIG0ytDeFcPRQJK4UJE3H2F8UQzMonJWq-MU4Fl0hLlmEg7etYzZgHizVTUqVK-vYZe94CJVfqsz6NEyy85zyfm2_kaFoiuienTALZRIIqxW-BpARGp5MtkGss8DtYsCamWN9fZqt8R4HRCVq_NXSaL9F0JdvQTupNind-gHcZvaf1knFsAej5t9y-7JCKr2KhJQjcLNYGWJVXLV0pfDNMWw',
+    image: '/fotos/isabela.jpeg',
   },
   {
     name: 'Fabio Pantoja',
     role: 'Estrategista e especialista em IA para negocios',
     body: 'Leva para o palco uma demo ao vivo de como tecnologia vira experiencia, repertorio pratico e oportunidade real.',
-    image:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuDiBm-v4Q8xaaHDkYy5iuGmIdc0nQLv4aqv13Wb0Q9lxW8-KvR2F5Kq5d-Kv4Qsj3YjiL36c_5RMInpWO7k6NYHZpBr6oBKCZmorw9bHzAP_z-wPkSqHFjGE7L_wvhoTn-P2erF3Xi7V6IBvJ7rUBIX8Bp06ryPWDyXUjiOqvSlNSyLpwPccg8NwTQDVHprgEqaEb1xiFJaAWJdY-R35RgNKTWCVa7ZKh_FflZMdK9w6Mn3WeAzAga87dUuWoioBiWp1fowWUFKwzAk',
+    image: '/fotos/pantoja.jpg',
   },
 ] as const;
 

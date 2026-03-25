@@ -49,3 +49,11 @@ Log numerado das mudancas pedidas a partir desta etapa do projeto.
 - indicacao interna de `motionMode` no runtime para diferenciar `full` de `reduced`
 
 **Status:** concluido
+
+## 005
+
+**Pedido:** usar as 4 imagens adicionadas pela pasta `fotos`, incluindo a logo no favicon e nos lugares cabiveis.
+
+**Acao:** movi os arquivos para `public/fotos`, substitui as fotos remotas dos palestrantes pelas imagens reais locais e troquei o simbolo textual pela logo real no header, footer e favicon.
+
+**Status:** concluido

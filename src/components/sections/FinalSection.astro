@@ -27,13 +27,20 @@ import { eventMeta } from '../../data/site';
 
     <footer class="mt-10 rounded-[2rem] bg-white/70 px-6 py-8 shadow-soft ring-1 ring-white/70 backdrop-blur">
       <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
-        <div>
-          <div class="font-display text-2xl font-black tracking-[-0.04em] text-ink">
-            {eventMeta.name}
+        <div class="flex items-center gap-4">
+          <img
+            src="/fotos/logo-PeA-fundo-branco.png"
+            alt="Logo do Pessoas em Acao"
+            class="h-14 w-14 rounded-full bg-white object-contain p-1 ring-1 ring-rose/10"
+          />
+          <div>
+            <div class="font-display text-2xl font-black tracking-[-0.04em] text-ink">
+              {eventMeta.name}
+            </div>
+            <p class="mt-2 text-sm font-medium uppercase tracking-[0.16em] text-ink-soft">
+              {eventMeta.dateDisplay} · {eventMeta.city}
+            </p>
           </div>
-          <p class="mt-2 text-sm font-medium uppercase tracking-[0.16em] text-ink-soft">
-            {eventMeta.dateDisplay} · {eventMeta.city}
-          </p>
         </div>
 
         <div class="grid gap-3 text-sm font-semibold text-ink-soft sm:grid-cols-2 lg:text-right">
