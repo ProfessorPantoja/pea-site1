@@ -12,6 +12,21 @@ Estrutura organizada para iniciar a implementacao da landing page do evento `Pes
 - `design/archives`: arquivos compactados de referencia
 - `scripts`: utilitarios locais
 
-## Proxima fase
+## App
 
-A raiz foi liberada para receber o app em `Astro`, com `src/`, `public/`, `astro.config.*`, `package.json` e configuracoes de build.
+O site esta implementado em `Astro + Tailwind CSS + TypeScript`.
+
+### Comandos
+
+- `npm install`
+- `npm run dev`
+- `npm run build`
+- `npm run preview`
+
+### Estrutura do app
+
+- `src/pages/index.astro`: landing page principal
+- `src/components/sections`: secoes da landing page
+- `src/layouts`: layout base e scripts globais
+- `src/data/site.ts`: conteudo centralizado e placeholders internos
+- `src/styles/global.css`: tokens visuais, utilitarios e animacoes

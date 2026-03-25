@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Pessoas em Acao">
+  <defs>
+    <linearGradient id="pea-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b35465" />
+      <stop offset="100%" stop-color="#5dbdf0" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="20" fill="#f0eff2" />
+  <circle cx="24" cy="22" r="9" fill="url(#pea-gradient)" />
+  <circle cx="42" cy="24" r="8" fill="#2f2d31" />
+  <path
+    d="M16 48c2-8 8-12 15-12s13 4 15 12"
+    fill="none"
+    stroke="url(#pea-gradient)"
+    stroke-linecap="round"
+    stroke-width="6"
+  />
+</svg>

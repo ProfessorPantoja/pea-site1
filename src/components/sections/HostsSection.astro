@@ -1,0 +1,40 @@
+---
+import { hosts } from '../../data/site';
+---
+
+<section id="conduz" class="section-space relative overflow-hidden bg-section-aura">
+  <div class="shell">
+    <div class="mx-auto max-w-3xl text-center">
+      <div data-reveal class="reveal-ready space-y-5">
+        <span class="eyebrow">Quem conduz</span>
+        <h2 class="section-heading">Quem conduz essa experiencia</h2>
+        <p class="section-copy">
+          A proposta do evento mistura profundidade humana, energia de encontro e repertorio
+          pratico para o dia seguinte.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-14 grid gap-8 lg:grid-cols-3">
+      {hosts.map((host, index) => (
+        <article
+          data-reveal
+          style={`--delay:${index * 100 + 120}ms`}
+          class="reveal-ready surface-card relative overflow-hidden p-8 text-center"
+        >
+          <div class="absolute left-1/2 top-7 h-32 w-32 -translate-x-1/2 rounded-full bg-gradient-to-br from-rose-soft/15 to-sky-soft/12 blur-2xl"></div>
+          <div class="relative mx-auto h-48 w-48 overflow-hidden rounded-full ring-8 ring-white/70 shadow-soft">
+            <img src={host.image} alt={host.name} class="h-full w-full object-cover" />
+          </div>
+          <div class="mt-8">
+            <h3 class="text-3xl font-bold tracking-[-0.04em] text-ink">{host.name}</h3>
+            <p class="mt-2 text-sm font-extrabold uppercase tracking-[0.18em] text-rose">
+              {host.role}
+            </p>
+            <p class="mt-5 text-base leading-8 text-ink-soft">{host.body}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

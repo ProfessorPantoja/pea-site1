@@ -1,0 +1,101 @@
+---
+import { eventMeta, heroStats } from '../../data/site';
+---
+
+<section id="evento" class="section-space relative overflow-hidden pt-32 sm:pt-36">
+  <div class="orb -left-14 top-20 h-40 w-40 bg-rose-soft/25 animate-float"></div>
+  <div class="orb right-0 top-0 h-56 w-56 bg-sky-soft/25 animate-float-slow"></div>
+
+  <div class="shell">
+    <div class="grid items-center gap-12 lg:grid-cols-[minmax(0,1.15fr)_minmax(320px,0.85fr)]">
+      <div class="space-y-8">
+        <div data-reveal style="--delay: 80ms" class="reveal-ready space-y-5">
+          <span class="eyebrow">{eventMeta.editionLabel}</span>
+          <h1 class="section-heading max-w-4xl">
+            Ainda esperando o <span class="text-rose italic">momento certo</span> para crescer?
+            Ele e agora.
+          </h1>
+          <p class="section-copy max-w-2xl text-lg sm:text-xl">
+            Networking, conhecimento e entretenimento num so lugar. Para quem quer sair do
+            modo passivo e entrar em movimento.
+          </p>
+        </div>
+
+        <div data-reveal style="--delay: 160ms" class="reveal-ready flex flex-wrap gap-3">
+          <span class="section-tag">{eventMeta.dateDisplay}</span>
+          <span class="section-tag">{eventMeta.city}</span>
+          <span class="section-tag">{eventMeta.capacity}</span>
+        </div>
+
+        <div data-reveal style="--delay: 220ms" class="reveal-ready flex flex-col gap-4 sm:flex-row">
+          <a href={eventMeta.whatsappUrl} target="_blank" rel="noreferrer" class="cta-primary">
+            Garantir minha vaga
+          </a>
+          <a
+            href={eventMeta.whatsappUrl}
+            target="_blank"
+            rel="noreferrer"
+            class="cta-secondary"
+          >
+            Falar no WhatsApp
+          </a>
+        </div>
+
+        <div
+          data-reveal
+          style="--delay: 300ms"
+          class="reveal-ready grid gap-4 sm:grid-cols-2 xl:grid-cols-4"
+        >
+          {heroStats.map((item, index) => (
+            <article
+              class="surface-card relative overflow-hidden px-5 py-5"
+              style={`--delay:${index * 80}ms`}
+            >
+              <div class="absolute right-0 top-0 h-24 w-24 -translate-y-10 translate-x-10 rounded-full bg-gradient-to-br from-rose-soft/20 to-sky-soft/20"></div>
+              <div class="text-lg font-extrabold uppercase tracking-[0.16em] text-rose">{item.value}</div>
+              <p class="mt-2 max-w-[14rem] text-sm font-medium leading-6 text-ink-soft">
+                {item.label}
+              </p>
+            </article>
+          ))}
+        </div>
+      </div>
+
+      <div data-reveal style="--delay: 180ms" class="reveal-ready">
+        <div class="relative" data-pointer-parallax>
+          <div class="absolute -left-8 top-8 hidden rounded-full bg-white/80 px-4 py-3 text-xs font-bold uppercase tracking-[0.2em] text-ink-soft shadow-soft lg:block">
+            Energia real
+          </div>
+          <div class="absolute -bottom-7 right-5 z-20 hidden rounded-3xl bg-ink px-5 py-4 text-sm text-white shadow-soft md:block">
+            <div class="text-[0.72rem] font-bold uppercase tracking-[0.28em] text-white/60">
+              Ingresso
+            </div>
+            <div class="mt-1 font-display text-3xl font-extrabold">{eventMeta.price}</div>
+          </div>
+
+          <div class="surface-card relative overflow-hidden rounded-[2.3rem] bg-hero-aura p-4 sm:p-5">
+            <div class="relative overflow-hidden rounded-[1.9rem]">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnQjwCdcNu6-p8asohb_pcqk2myDgdjEYIGl337AqE88md4WS79UhJxl1klGScBbiVv_GI54tMa97XopLyy45dyTSy01PloGV8j9kLxrY2chIXYmGqKYpmS6-feoXAS03kJ2HzIIa-fp1Acj9zTOpTsBIy-gP3gGYgDo3k_y5V9aLc48z6Yq9sCM-ioW7S6dZjMCRbGTKHSfRYDV7G9Dz1O3ON8ErgLW1SoQpnWID1EtROXKF4wRS1pRBfuuyy7Q3pDwvudTiPTgT2"
+                alt="Grupo de pessoas em um ambiente de evento, sorrindo e conversando."
+                class="aspect-[4/4.7] w-full rounded-[1.7rem] object-cover sm:aspect-[4/4.4]"
+              />
+            </div>
+
+            <div class="absolute inset-x-6 bottom-6 rounded-[1.6rem] bg-white/86 p-5 backdrop-blur-xl">
+              <p class="text-[0.72rem] font-extrabold uppercase tracking-[0.28em] text-rose">
+                O que voce vai encontrar
+              </p>
+              <div class="mt-3 grid grid-cols-2 gap-3 text-sm font-semibold text-ink">
+                <span class="rounded-2xl bg-surface px-3 py-2">Networking de verdade</span>
+                <span class="rounded-2xl bg-surface px-3 py-2">Demo de IA ao vivo</span>
+                <span class="rounded-2xl bg-surface px-3 py-2">Comida liberada</span>
+                <span class="rounded-2xl bg-surface px-3 py-2">Energia alta</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,81 @@
+---
+import { proofMetrics, proofTiles } from '../../data/site';
+---
+
+<section id="prova-social" class="section-space relative">
+  <div class="shell">
+    <div class="grid gap-10 lg:grid-cols-[minmax(320px,0.95fr)_minmax(0,1.05fr)] lg:items-start">
+      <div data-reveal class="reveal-ready">
+        <article class="surface-card group relative overflow-hidden p-4 sm:p-5">
+          <div class="relative overflow-hidden rounded-[1.8rem]">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoRmn3P9zvTBAcP0CAq0v-oJqr2a0-Lf1wZO01avsixaQS-JHggyto4MCEXP_a1y1Qhz_u9jMFaNv9vmhzhZcBWy9GPQDtcvyoZLvrap57_DN5h8VRwXVSIwf1lan8R7TYfwXEZqFm7NQBqMk_hDQCoip1t0MKNn7hnJJ4wBy4mVAMxMrBpNJri7qpPpTflitxL_LTEmR6sacdwO_tNq89eP_zMOXcr_GH0XL36e7trof6291KIErTCmPicNPoGGekvFAikfAsyGQB"
+              alt="Publico em um evento, prestando atencao e vivendo a atmosfera do encontro."
+              class="aspect-[4/4.8] w-full object-cover transition duration-700 group-hover:scale-[1.04]"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/60 via-ink/10 to-transparent"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="relative flex h-24 w-24 items-center justify-center rounded-full bg-white text-rose shadow-soft">
+                <span class="absolute inset-0 rounded-full border border-rose/20 animate-pulse-ring"></span>
+                <span class="ml-1 text-4xl">▶</span>
+              </div>
+            </div>
+            <div class="absolute inset-x-5 bottom-5 flex items-end justify-between gap-4">
+              <div>
+                <div class="text-[0.72rem] font-extrabold uppercase tracking-[0.25em] text-white/65">
+                  Aftermovie
+                </div>
+                <div class="mt-2 font-display text-2xl font-bold tracking-[-0.04em] text-white">
+                  Isso nao comecou hoje.
+                </div>
+              </div>
+              <span class="rounded-full bg-white/15 px-3 py-2 text-[0.68rem] font-bold uppercase tracking-[0.18em] text-white backdrop-blur">
+                5 edicoes anteriores
+              </span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="space-y-10">
+        <div data-reveal style="--delay: 120ms" class="reveal-ready space-y-5">
+          <span class="eyebrow">Prova social</span>
+          <h2 class="section-heading">Isso nao comecou hoje.</h2>
+          <p class="section-copy max-w-2xl">
+            5 edicoes anteriores. Centenas de pessoas impactadas. Agora a proposta evolui,
+            amplia o publico e mantem a mesma energia.
+          </p>
+        </div>
+
+        <div
+          data-reveal
+          style="--delay: 180ms"
+          class="reveal-ready grid gap-4 sm:grid-cols-3"
+        >
+          {proofMetrics.map((metric) => (
+            <article class="surface-card px-5 py-6 text-center">
+              <div class="text-2xl font-black uppercase tracking-[0.16em] text-rose sm:text-3xl">
+                {metric.value}
+              </div>
+              <p class="mt-2 text-sm font-medium leading-6 text-ink-soft">{metric.label}</p>
+            </article>
+          ))}
+        </div>
+
+        <div class="grid gap-5 sm:grid-cols-3">
+          {proofTiles.map((tile, index) => (
+            <article
+              data-reveal
+              style={`--delay:${index * 90 + 220}ms`}
+              class="reveal-ready surface-card h-full p-6"
+            >
+              <span class="section-tag">PeA</span>
+              <h3 class="mt-5 text-xl font-bold tracking-[-0.04em] text-ink">{tile.title}</h3>
+              <p class="mt-4 text-sm leading-7 text-ink-soft">{tile.body}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

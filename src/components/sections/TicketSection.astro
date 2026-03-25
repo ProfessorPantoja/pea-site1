@@ -1,0 +1,88 @@
+---
+import { eventMeta, ticketItems } from '../../data/site';
+---
+
+<section id="ingresso" class="section-space relative overflow-hidden bg-ink text-white">
+  <div class="orb -left-10 bottom-0 h-52 w-52 bg-rose-soft/18 animate-float"></div>
+  <div class="orb right-0 top-10 h-56 w-56 bg-sky-soft/18 animate-float-slow"></div>
+
+  <div class="shell relative z-10">
+    <div class="mx-auto max-w-4xl text-center">
+      <div data-reveal class="reveal-ready space-y-5">
+        <span class="eyebrow bg-white/10 text-white ring-1 ring-white/10">Ingresso</span>
+        <h2 class="section-heading text-white">
+          {eventMeta.price} para viver uma experiencia que voce vai lembrar por muito tempo.
+        </h2>
+        <p class="font-display text-xl italic tracking-[-0.03em] text-white/70 sm:text-2xl">
+          "Nao imaginei que pagaria tao pouco num evento tao incrivel."
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-16 grid gap-8 lg:grid-cols-[minmax(0,0.95fr)_minmax(300px,0.8fr)] lg:items-center">
+      <article data-reveal style="--delay: 120ms" class="reveal-ready rounded-[2rem] bg-white p-8 text-ink shadow-glow sm:p-10">
+        <div class="inline-flex rounded-full bg-gradient-to-r from-rose to-rose-soft px-4 py-2 text-[0.72rem] font-extrabold uppercase tracking-[0.25em] text-white">
+          Ingresso presencial completo
+        </div>
+        <div class="mt-8 flex items-end gap-3">
+          <span class="font-display text-6xl font-black tracking-[-0.06em] text-rose">
+            {eventMeta.price}
+          </span>
+          <span class="pb-2 text-sm font-semibold uppercase tracking-[0.2em] text-ink-soft">
+            lote unico
+          </span>
+        </div>
+
+        <ul class="mt-8 grid gap-4 sm:grid-cols-2">
+          {ticketItems.map((item) => (
+            <li class="flex items-start gap-3 rounded-2xl bg-surface px-4 py-4 text-sm font-semibold text-ink-soft">
+              <span class="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-rose text-xs font-black text-white">
+                ✓
+              </span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+
+        <a
+          href={eventMeta.whatsappUrl}
+          target="_blank"
+          rel="noreferrer"
+          class="cta-primary mt-8 w-full justify-center text-center"
+        >
+          Reservar meu ingresso agora
+        </a>
+      </article>
+
+      <div class="space-y-5">
+        <article data-reveal style="--delay: 180ms" class="reveal-ready glass-panel p-8 text-white ring-1 ring-white/10">
+          <span class="section-tag bg-white/10 text-white">Escassez real</span>
+          <h3 class="mt-5 text-3xl font-bold tracking-[-0.04em]">100 vagas e nenhuma entrada na hora.</h3>
+          <p class="mt-5 text-base leading-8 text-white/72">
+            O espaco comporta exatamente 100 pessoas. Nao vendemos acima disso porque o valor do
+            evento depende da experiencia completa, do conforto e da qualidade do networking.
+          </p>
+        </article>
+
+        <article data-reveal style="--delay: 260ms" class="reveal-ready rounded-[2rem] bg-white/8 p-7 ring-1 ring-white/10 backdrop-blur">
+          <div class="flex items-center gap-4">
+            <div class="flex -space-x-3">
+              <span class="inline-flex h-12 w-12 items-center justify-center rounded-full border-2 border-ink bg-rose-soft/80 text-xs font-black uppercase text-white">
+                Pe
+              </span>
+              <span class="inline-flex h-12 w-12 items-center justify-center rounded-full border-2 border-ink bg-sky-soft/80 text-xs font-black uppercase text-white">
+                Ac
+              </span>
+              <span class="inline-flex h-12 w-12 items-center justify-center rounded-full border-2 border-ink bg-white/15 text-[0.7rem] font-black uppercase text-white">
+                +98
+              </span>
+            </div>
+            <p class="text-sm font-semibold uppercase tracking-[0.14em] text-white/72">
+              o ambiente certo aproxima rapido
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>

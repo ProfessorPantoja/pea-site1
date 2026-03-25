@@ -1,0 +1,52 @@
+---
+import { eventMeta } from '../../data/site';
+---
+
+<section class="section-space relative overflow-hidden">
+  <div class="orb left-1/2 top-8 h-72 w-72 -translate-x-1/2 bg-rose-soft/18 animate-float"></div>
+  <div class="shell relative z-10">
+    <div class="glass-panel mx-auto max-w-5xl px-6 py-12 text-center sm:px-10 sm:py-16">
+      <div data-reveal class="reveal-ready">
+        <span class="eyebrow">Ultima chamada</span>
+        <h2 class="section-heading mt-5">
+          Se voce sente que precisa mudar de ambiente, esse e o seu momento.
+        </h2>
+        <p class="section-copy mx-auto mt-6 max-w-2xl">
+          As vagas sao limitadas. Entre em contato e garanta seu lugar no Pessoas em Acao.
+        </p>
+        <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <a href={eventMeta.whatsappUrl} target="_blank" rel="noreferrer" class="cta-primary">
+            Garantir minha vaga no WhatsApp
+          </a>
+          <a href={eventMeta.instagramUrl} target="_blank" rel="noreferrer" class="cta-secondary">
+            Ver Instagram oficial
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="mt-10 rounded-[2rem] bg-white/70 px-6 py-8 shadow-soft ring-1 ring-white/70 backdrop-blur">
+      <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+        <div>
+          <div class="font-display text-2xl font-black tracking-[-0.04em] text-ink">
+            {eventMeta.name}
+          </div>
+          <p class="mt-2 text-sm font-medium uppercase tracking-[0.16em] text-ink-soft">
+            {eventMeta.dateDisplay} · {eventMeta.city}
+          </p>
+        </div>
+
+        <div class="grid gap-3 text-sm font-semibold text-ink-soft sm:grid-cols-2 lg:text-right">
+          <a href={eventMeta.instagramUrl} target="_blank" rel="noreferrer" class="hover:text-rose">
+            {eventMeta.instagramHandle}
+          </a>
+          <a href={`mailto:${eventMeta.email}`} class="hover:text-rose">{eventMeta.email}</a>
+          <a href={eventMeta.whatsappUrl} target="_blank" rel="noreferrer" class="hover:text-rose">
+            Contato via WhatsApp
+          </a>
+          <span>Landing page oficial da edicao atual</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</section>

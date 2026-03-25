@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-background font-body text-ink antialiased;
+  background-image:
+    radial-gradient(circle at top left, rgba(235, 133, 153, 0.18), transparent 28%),
+    radial-gradient(circle at 82% 2%, rgba(93, 189, 240, 0.18), transparent 22%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(250, 245, 250, 1));
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.32;
+  background-image:
+    linear-gradient(rgba(47, 45, 49, 0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(47, 45, 49, 0.018) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: radial-gradient(circle at center, black 42%, transparent 92%);
+}
+
+::selection {
+  background: rgba(179, 84, 101, 0.22);
+  color: #2f2d31;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+  }
+
+  a,
+  button {
+    @apply transition-all duration-300;
+  }
+}
+
+@layer components {
+  .shell {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+  }
+
+  .section-space {
+    @apply py-20 sm:py-24 lg:py-28;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-[0.72rem] font-extrabold uppercase tracking-[0.28em] text-rose backdrop-blur;
+    background-color: rgba(255, 255, 255, 0.82);
+  }
+
+  .section-heading {
+    @apply text-4xl font-extrabold leading-tight tracking-[-0.04em] text-ink sm:text-5xl lg:text-6xl;
+  }
+
+  .section-copy {
+    @apply text-base leading-8 text-ink-soft sm:text-lg;
+  }
+
+  .surface-card {
+    @apply rounded-4xl bg-white shadow-soft ring-1 ring-mist backdrop-blur;
+    background-color: rgba(255, 255, 255, 0.88);
+  }
+
+  .section-tag {
+    @apply inline-flex items-center rounded-full bg-white px-3 py-1 text-xs font-bold uppercase tracking-[0.22em] text-ink-soft;
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+
+  .cta-primary {
+    @apply inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-rose to-rose-soft px-7 py-4 text-sm font-extrabold uppercase tracking-[0.18em] text-white shadow-glow hover:-translate-y-1;
+  }
+
+  .cta-secondary {
+    @apply inline-flex items-center justify-center gap-3 rounded-full bg-white px-7 py-4 text-sm font-bold uppercase tracking-[0.18em] text-ink ring-1 ring-mist backdrop-blur hover:-translate-y-1 hover:bg-white;
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+
+  .reveal-ready {
+    opacity: 0;
+    transform: translateY(30px) scale(0.985);
+    transition:
+      opacity 720ms var(--ease-out),
+      transform 920ms var(--ease-out);
+    transition-delay: var(--delay, 0ms);
+  }
+
+  .reveal-ready.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  .glass-panel {
+    @apply rounded-4xl border border-white bg-white shadow-soft backdrop-blur-xl;
+    background-color: rgba(255, 255, 255, 0.72);
+    border-color: rgba(255, 255, 255, 0.55);
+  }
+
+  .orb {
+    @apply absolute rounded-full blur-3xl;
+  }
+}
+
+[data-site-header].is-scrolled {
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 18px 36px rgba(47, 45, 49, 0.06);
+}
+
+[data-pointer-parallax] {
+  transform-style: preserve-3d;
+  transition: transform 320ms var(--ease-out);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .reveal-ready {
+    opacity: 1;
+    transform: none;
+  }
+}

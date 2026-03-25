@@ -1,0 +1,93 @@
+---
+import NavBar from '../components/NavBar.astro';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Pessoas em Acao - 6a edicao da essencia',
+  description = 'Landing page oficial do evento Pessoas em Acao: networking, conhecimento e entretenimento em Cabo Frio.',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f0eff2" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <a
+      href="#conteudo"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-white focus:px-5 focus:py-3 focus:font-bold focus:text-ink"
+    >
+      Ir para o conteudo
+    </a>
+    <NavBar />
+    <main id="conteudo">
+      <slot />
+    </main>
+
+    <script is:inline>
+      const initializeMotion = () => {
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const reveals = [...document.querySelectorAll('[data-reveal]')];
+
+        if (reduceMotion) {
+          reveals.forEach((element) => element.classList.add('is-visible'));
+        } else {
+          const observer = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('is-visible');
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.18, rootMargin: '0px 0px -10% 0px' }
+          );
+
+          reveals.forEach((element) => observer.observe(element));
+
+          const parallaxTargets = [...document.querySelectorAll('[data-pointer-parallax]')];
+
+          window.addEventListener(
+            'pointermove',
+            (event) => {
+              const x = (event.clientX / window.innerWidth - 0.5) * 10;
+              const y = (event.clientY / window.innerHeight - 0.5) * 10;
+
+              parallaxTargets.forEach((target) => {
+                target.style.transform = `perspective(1200px) rotateY(${x * 0.4}deg) rotateX(${y * -0.35}deg) translate3d(${x * 0.4}px, ${y * 0.2}px, 0)`;
+              });
+            },
+            { passive: true }
+          );
+        }
+
+        const header = document.querySelector('[data-site-header]');
+        const syncHeader = () => {
+          if (!header) return;
+          header.classList.toggle('is-scrolled', window.scrollY > 18);
+        };
+
+        syncHeader();
+        window.addEventListener('scroll', syncHeader, { passive: true });
+      };
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initializeMotion, { once: true });
+      } else {
+        initializeMotion();
+      }
+    </script>
+  </body>
+</html>

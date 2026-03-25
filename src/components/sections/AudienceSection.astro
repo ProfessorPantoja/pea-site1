@@ -1,0 +1,42 @@
+---
+import { audienceCards } from '../../data/site';
+---
+
+<section id="publico" class="section-space relative">
+  <div class="shell">
+    <div class="mx-auto max-w-3xl text-center">
+      <div data-reveal class="reveal-ready space-y-5">
+        <span class="eyebrow">Para quem e</span>
+        <h2 class="section-heading">Esse evento faz sentido para voce?</h2>
+        <p class="section-copy">
+          Se voce se reconhece aqui, esse ambiente foi pensado para voce.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-14 grid gap-6 lg:grid-cols-3">
+      {audienceCards.map((item, index) => (
+        <article
+          data-reveal
+          style={`--delay:${index * 100 + 100}ms`}
+          class="reveal-ready surface-card flex h-full flex-col justify-between p-8"
+        >
+          <div>
+            <span class="section-tag">{item.tag}</span>
+            <h3 class="mt-6 text-2xl font-bold tracking-[-0.04em] text-ink">{item.title}</h3>
+            <p class="mt-5 text-base leading-8 text-ink-soft">{item.body}</p>
+          </div>
+          <div class="mt-8 h-1.5 rounded-full bg-gradient-to-r from-rose via-rose-soft to-sky-soft"></div>
+        </article>
+      ))}
+    </div>
+
+    <p
+      data-reveal
+      style="--delay: 320ms"
+      class="reveal-ready mt-12 text-center font-display text-2xl font-bold tracking-[-0.03em] text-ink/60 sm:text-3xl"
+    >
+      Nao e para quem quer continuar no automatico.
+    </p>
+  </div>
+</section>
