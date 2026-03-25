@@ -1,5 +1,5 @@
 ---
-import { proofMetrics, proofTiles } from '../../data/site';
+import { proofMetrics, proofTiles, proofVideos } from '../../data/site';
 ---
 
 <section id="prova-social" class="section-space relative">
@@ -7,32 +7,31 @@ import { proofMetrics, proofTiles } from '../../data/site';
     <div class="grid gap-10 lg:grid-cols-[minmax(320px,0.95fr)_minmax(0,1.05fr)] lg:items-start">
       <div data-reveal class="reveal-ready">
         <article class="surface-card group relative overflow-hidden p-4 sm:p-5">
-          <div class="relative overflow-hidden rounded-[1.8rem]">
-            <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoRmn3P9zvTBAcP0CAq0v-oJqr2a0-Lf1wZO01avsixaQS-JHggyto4MCEXP_a1y1Qhz_u9jMFaNv9vmhzhZcBWy9GPQDtcvyoZLvrap57_DN5h8VRwXVSIwf1lan8R7TYfwXEZqFm7NQBqMk_hDQCoip1t0MKNn7hnJJ4wBy4mVAMxMrBpNJri7qpPpTflitxL_LTEmR6sacdwO_tNq89eP_zMOXcr_GH0XL36e7trof6291KIErTCmPicNPoGGekvFAikfAsyGQB"
-              alt="Publico em um evento, prestando atencao e vivendo a atmosfera do encontro."
-              class="aspect-[4/4.8] w-full object-cover transition duration-700 group-hover:scale-[1.04]"
-            />
-            <div class="absolute inset-0 bg-gradient-to-t from-ink/60 via-ink/10 to-transparent"></div>
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div class="relative flex h-24 w-24 items-center justify-center rounded-full bg-white text-rose shadow-soft">
-                <span class="absolute inset-0 rounded-full border border-rose/20 animate-pulse-ring"></span>
-                <span class="ml-1 text-4xl">▶</span>
-              </div>
-            </div>
-            <div class="absolute inset-x-5 bottom-5 flex items-end justify-between gap-4">
-              <div>
-                <div class="text-[0.72rem] font-extrabold uppercase tracking-[0.25em] text-white/65">
-                  Aftermovie
-                </div>
-                <div class="mt-2 font-display text-2xl font-bold tracking-[-0.04em] text-white">
-                  Isso nao comecou hoje.
-                </div>
-              </div>
+          <div class="relative overflow-hidden rounded-[1.8rem] bg-ink">
+            <video
+              controls
+              playsinline
+              preload={proofVideos[0].preload}
+              poster={proofVideos[0].poster}
+              class="aspect-[4/4.8] w-full object-cover"
+            >
+              <source src={proofVideos[0].src} type="video/mp4" />
+            </video>
+            <div class="pointer-events-none absolute inset-x-5 bottom-5 flex items-end justify-between gap-4">
               <span class="rounded-full bg-white/15 px-3 py-2 text-[0.68rem] font-bold uppercase tracking-[0.18em] text-white backdrop-blur">
-                5 edicoes anteriores
+                {proofVideos[0].duration}
               </span>
             </div>
+          </div>
+          <div class="mt-5 space-y-3 px-1 pb-1">
+            <div class="text-[0.72rem] font-extrabold uppercase tracking-[0.25em] text-rose">
+              Video em destaque
+            </div>
+            <h3 class="text-2xl font-bold tracking-[-0.04em] text-ink">{proofVideos[0].title}</h3>
+            <p class="text-sm leading-7 text-ink-soft">{proofVideos[0].body}</p>
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-ink-soft">
+              Clique para assistir com som
+            </p>
           </div>
         </article>
       </div>
@@ -62,11 +61,43 @@ import { proofMetrics, proofTiles } from '../../data/site';
           ))}
         </div>
 
+        <div class="grid gap-5 md:grid-cols-3">
+          {proofVideos.slice(1).map((video, index) => (
+            <article
+              data-reveal
+              style={`--delay:${index * 90 + 220}ms`}
+              class="reveal-ready surface-card hover-lift h-full overflow-hidden p-4"
+            >
+              <div class="overflow-hidden rounded-[1.5rem] bg-ink">
+                <video
+                  controls
+                  playsinline
+                  preload={video.preload}
+                  poster={video.poster}
+                  class="aspect-[4/6] w-full object-cover"
+                >
+                  <source src={video.src} type="video/mp4" />
+                </video>
+              </div>
+              <div class="px-2 pb-2 pt-5">
+                <div class="flex items-center justify-between gap-3">
+                  <span class="section-tag">Edicoes anteriores</span>
+                  <span class="text-[0.68rem] font-extrabold uppercase tracking-[0.18em] text-ink-soft">
+                    {video.duration}
+                  </span>
+                </div>
+                <h3 class="mt-4 text-lg font-bold tracking-[-0.04em] text-ink">{video.title}</h3>
+                <p class="mt-3 text-sm leading-7 text-ink-soft">{video.body}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+
         <div class="grid gap-5 sm:grid-cols-3">
           {proofTiles.map((tile, index) => (
             <article
               data-reveal
-              style={`--delay:${index * 90 + 220}ms`}
+              style={`--delay:${index * 90 + 420}ms`}
               class="reveal-ready surface-card hover-lift h-full p-6"
             >
               <span class="section-tag">PeA</span>

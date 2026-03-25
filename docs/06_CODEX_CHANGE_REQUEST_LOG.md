@@ -163,3 +163,13 @@ Log numerado das mudancas pedidas a partir desta etapa do projeto.
 **Objetivo:** reduzir o volume do pacote enviado para a Vercel e aumentar a chance de deploy estavel.
 
 **Status:** concluido
+
+## 015
+
+**Pedido:** corrigir a comunicacao da `6a` edicao, colocar os videos das edicoes anteriores no site com carregamento controlado e configurar o OG para compartilhamento no WhatsApp.
+
+**Acao:** trocada a copy da edicao para um texto mais claro, adicionados os quatro videos otimizados na secao de prova social com `preload="metadata"` apenas no primeiro e `preload="none"` nos demais, e configuradas meta tags Open Graph usando `public/fotos/og-pea.png`.
+
+**Objetivo:** melhorar compreensao imediata da proposta, usar prova social real sem pesar no carregamento e garantir compartilhamento com imagem correta no WhatsApp.
+
+**Status:** concluido

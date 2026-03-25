@@ -1,7 +1,7 @@
 // Placeholder content for the prototype. Replace contact and date details when the official data is approved.
 export const eventMeta = {
   name: 'Pessoas em Acao',
-  editionLabel: '6a edicao da essencia',
+  editionLabel: '6a edicao do Pessoas em Acao',
   dateDisplay: '2 de maio de 2026',
   city: 'Cabo Frio, RJ',
   duration: '5 horas de experiencia',
@@ -53,7 +53,7 @@ export const liaQuestions = [
 ] as const;
 
 export const heroStats = [
-  { value: '6a', label: 'edicao da essencia' },
+  { value: '6a edicao', label: 'do Pessoas em Acao' },
   { value: '100', label: 'vagas presenciais' },
   { value: '5h', label: 'de experiencia ao vivo' },
   { value: 'IA + networking', label: 'conteudo e conexao real' },
@@ -143,6 +143,41 @@ export const proofTiles = [
   {
     title: 'Ambiente que faz as pessoas se abrirem',
     body: 'Quando o clima esta certo, a energia muda. E isso acelera troca, confianca e oportunidade.',
+  },
+] as const;
+
+export const proofVideos = [
+  {
+    title: 'Clima real das edicoes anteriores',
+    body: 'Um recorte rapido para sentir energia, publico e atmosfera do Pessoas em Acao.',
+    src: '/video/1-optimized.mp4',
+    preload: 'metadata',
+    poster: '/fotos/og-pea.png',
+    duration: '32s',
+  },
+  {
+    title: 'Publico e ambiente',
+    body: 'Pessoas conectando, vivendo a experiencia e entrando no ritmo do encontro.',
+    src: '/video/2-optimized.mp4',
+    preload: 'none',
+    poster: '/fotos/og-pea.png',
+    duration: '13s',
+  },
+  {
+    title: 'Momento expandido',
+    body: 'O teaser mais longo para mostrar profundidade, energia e prova social do evento.',
+    src: '/video/3-optimized.mp4',
+    preload: 'none',
+    poster: '/fotos/og-pea.png',
+    duration: '1min',
+  },
+  {
+    title: 'Experiencia em movimento',
+    body: 'Mais um recorte de palco, publico e emocao para reduzir duvida e aumentar confianca.',
+    src: '/video/4-optimized.mp4',
+    preload: 'none',
+    poster: '/fotos/og-pea.png',
+    duration: '14s',
   },
 ] as const;
 
