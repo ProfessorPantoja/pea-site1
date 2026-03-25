@@ -33,3 +33,19 @@ Log numerado das mudancas pedidas a partir desta etapa do projeto.
 **Acao:** limitei a largura do bloco, apliquei `min-w-0` nos containers criticos e isolei o marquee dentro de um wrapper com `overflow-hidden`.
 
 **Status:** concluido
+
+## 004
+
+**Pedido:** deixar a animacao perceptivel na pratica e explicar por que ela parecia inexistente.
+
+**Causa encontrada:** o sistema de reveal existia, mas a entrada dos elementos visiveis na primeira dobra estava sutil demais e rapida demais para ser percebida.
+
+**Acao:** reforcei o motion com:
+
+- stagger real nos elementos ja visiveis no primeiro viewport
+- atraso inicial maior para o olho perceber a entrada
+- reveal com mais deslocamento e blur
+- CTA principal com pulso continuo
+- indicacao interna de `motionMode` no runtime para diferenciar `full` de `reduced`
+
+**Status:** concluido

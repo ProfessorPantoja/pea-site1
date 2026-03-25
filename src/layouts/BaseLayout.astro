@@ -41,12 +41,30 @@ const {
         const reveals = [...document.querySelectorAll('[data-reveal]')];
 
         if (reduceMotion) {
+          document.documentElement.dataset.motionMode = 'reduced';
           reveals.forEach((element) => element.classList.add('is-visible'));
         } else {
+          document.documentElement.dataset.motionMode = 'full';
           document.documentElement.classList.add('motion-enabled');
 
           window.requestAnimationFrame(() => {
             window.requestAnimationFrame(() => {
+              const viewportTrigger = window.innerHeight * 0.92;
+              const visibleQueue = [];
+
+              reveals.forEach((element) => {
+                const box = element.getBoundingClientRect();
+                if (box.top <= viewportTrigger) {
+                  visibleQueue.push(element);
+                }
+              });
+
+              visibleQueue.forEach((element, index) => {
+                window.setTimeout(() => {
+                  element.classList.add('is-visible');
+                }, 160 + index * 130);
+              });
+
               const observer = new IntersectionObserver(
                 (entries) => {
                   entries.forEach((entry) => {
@@ -59,7 +77,11 @@ const {
                 { threshold: 0.12, rootMargin: '0px 0px -8% 0px' }
               );
 
-              reveals.forEach((element) => observer.observe(element));
+              reveals.forEach((element) => {
+                if (!visibleQueue.includes(element)) {
+                  observer.observe(element);
+                }
+              });
             });
           });
 
