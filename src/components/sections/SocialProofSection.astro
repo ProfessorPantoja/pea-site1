@@ -3,9 +3,50 @@ import { proofMetrics, proofTiles, proofVideos } from '../../data/site';
 ---
 
 <section id="prova-social" class="section-space relative">
-  <div class="shell">
-    <div class="grid gap-10 lg:grid-cols-[minmax(320px,0.95fr)_minmax(0,1.05fr)] lg:items-start">
-      <div data-reveal class="reveal-ready">
+  <div class="section-curve section-curve--soft"></div>
+
+  <div class="shell relative z-10">
+    <div class="mx-auto max-w-3xl text-center">
+      <div data-reveal class="reveal-ready space-y-5">
+        <span class="eyebrow">Prova social</span>
+        <h2 class="section-heading">Isso não começou hoje.</h2>
+        <p class="section-copy">
+          5 edições anteriores. Centenas de pessoas impactadas. Agora a proposta evolui,
+          amplia o público e mantém a mesma energia.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-14 grid gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(320px,0.95fr)] lg:items-start">
+      <div class="space-y-8">
+        <div
+          data-reveal
+          style="--delay: 120ms"
+          class="reveal-ready grid gap-4 sm:grid-cols-3"
+        >
+          {proofMetrics.map((metric) => (
+            <article class="surface-card hover-lift px-5 py-6 text-center">
+              <div class="text-2xl font-black uppercase tracking-[0.16em] text-rose sm:text-3xl">
+                {metric.value}
+              </div>
+              <p class="mt-2 text-sm font-medium leading-6 text-ink-soft">{metric.label}</p>
+            </article>
+          ))}
+        </div>
+
+        <div data-reveal style="--delay: 180ms" class="reveal-ready subsection-divider space-y-4">
+          <span class="subsection-kicker">Vídeos das edições anteriores</span>
+          <h3 class="text-3xl font-bold tracking-[-0.04em] text-ink">
+            Veja como a experiência acontece de verdade.
+          </h3>
+          <p class="text-base leading-8 text-ink-soft">
+            Esses recortes mostram palco, energia, público e atmosfera real do Pessoas em Ação.
+            Eles entram aqui para reduzir dúvida e deixar visível que o encontro já aconteceu.
+          </p>
+        </div>
+      </div>
+
+      <div data-reveal style="--delay: 160ms" class="reveal-ready">
         <article class="surface-card group relative overflow-hidden p-4 sm:p-5">
           <div class="relative overflow-hidden rounded-[1.8rem] bg-ink">
             <video
@@ -35,78 +76,63 @@ import { proofMetrics, proofTiles, proofVideos } from '../../data/site';
           </div>
         </article>
       </div>
+    </div>
 
-      <div class="space-y-10">
-        <div data-reveal style="--delay: 120ms" class="reveal-ready space-y-5">
-          <span class="eyebrow">Prova social</span>
-          <h2 class="section-heading">Isso não começou hoje.</h2>
-          <p class="section-copy max-w-2xl">
-            5 edições anteriores. Centenas de pessoas impactadas. Agora a proposta evolui,
-            amplia o público e mantém a mesma energia.
-          </p>
-        </div>
-
-        <div
+    <div class="mt-12 grid gap-5 md:grid-cols-3">
+      {proofVideos.slice(1).map((video, index) => (
+        <article
           data-reveal
-          style="--delay: 180ms"
-          class="reveal-ready grid gap-4 sm:grid-cols-3"
+          style={`--delay:${index * 90 + 220}ms`}
+          class="reveal-ready surface-card hover-lift h-full overflow-hidden p-4"
         >
-          {proofMetrics.map((metric) => (
-            <article class="surface-card hover-lift px-5 py-6 text-center">
-              <div class="text-2xl font-black uppercase tracking-[0.16em] text-rose sm:text-3xl">
-                {metric.value}
-              </div>
-              <p class="mt-2 text-sm font-medium leading-6 text-ink-soft">{metric.label}</p>
-            </article>
-          ))}
-        </div>
-
-        <div class="grid gap-5 md:grid-cols-3">
-          {proofVideos.slice(1).map((video, index) => (
-            <article
-              data-reveal
-              style={`--delay:${index * 90 + 220}ms`}
-              class="reveal-ready surface-card hover-lift h-full overflow-hidden p-4"
+          <div class="overflow-hidden rounded-[1.5rem] bg-ink">
+            <video
+              controls
+              playsinline
+              preload={video.preload}
+              poster={video.poster}
+              class="aspect-[4/6] w-full object-cover"
             >
-              <div class="overflow-hidden rounded-[1.5rem] bg-ink">
-                <video
-                  controls
-                  playsinline
-                  preload={video.preload}
-                  poster={video.poster}
-                  class="aspect-[4/6] w-full object-cover"
-                >
-                  <source src={video.src} type="video/mp4" />
-                </video>
-              </div>
-              <div class="px-2 pb-2 pt-5">
-                <div class="flex items-center justify-between gap-3">
-                  <span class="section-tag">Edições anteriores</span>
-                  <span class="text-[0.68rem] font-extrabold uppercase tracking-[0.18em] text-ink-soft">
-                    {video.duration}
-                  </span>
-                </div>
-                <h3 class="mt-4 text-lg font-bold tracking-[-0.04em] text-ink">{video.title}</h3>
-                <p class="mt-3 text-sm leading-7 text-ink-soft">{video.body}</p>
-              </div>
-            </article>
-          ))}
-        </div>
+              <source src={video.src} type="video/mp4" />
+            </video>
+          </div>
+          <div class="px-2 pb-2 pt-5">
+            <div class="flex items-center justify-between gap-3">
+              <span class="section-tag">Edições anteriores</span>
+              <span class="text-[0.68rem] font-extrabold uppercase tracking-[0.18em] text-ink-soft">
+                {video.duration}
+              </span>
+            </div>
+            <h3 class="mt-4 text-lg font-bold tracking-[-0.04em] text-ink">{video.title}</h3>
+            <p class="mt-3 text-sm leading-7 text-ink-soft">{video.body}</p>
+          </div>
+        </article>
+      ))}
+    </div>
 
-        <div class="grid gap-5 sm:grid-cols-3">
-          {proofTiles.map((tile, index) => (
-            <article
-              data-reveal
-              style={`--delay:${index * 90 + 420}ms`}
-              class="reveal-ready surface-card hover-lift h-full p-6"
-            >
-              <span class="section-tag">PeA</span>
-              <h3 class="mt-5 text-xl font-bold tracking-[-0.04em] text-ink">{tile.title}</h3>
-              <p class="mt-4 text-sm leading-7 text-ink-soft">{tile.body}</p>
-            </article>
-          ))}
-        </div>
-      </div>
+    <div data-reveal style="--delay: 420ms" class="reveal-ready mt-12 subsection-divider space-y-4">
+      <span class="subsection-kicker">Depois do evento</span>
+      <h3 class="text-3xl font-bold tracking-[-0.04em] text-ink">
+        O que continua vivo quando a edição termina.
+      </h3>
+      <p class="text-base leading-8 text-ink-soft">
+        O valor do Pessoas em Ação não para no palco. Ele continua em conexão, aplicação e
+        sensação real de avanço.
+      </p>
+    </div>
+
+    <div class="mt-8 grid gap-5 sm:grid-cols-3">
+      {proofTiles.map((tile, index) => (
+        <article
+          data-reveal
+          style={`--delay:${index * 90 + 460}ms`}
+          class="reveal-ready surface-card hover-lift h-full p-6"
+        >
+          <span class="section-tag">{tile.tag}</span>
+          <h3 class="mt-5 text-xl font-bold tracking-[-0.04em] text-ink">{tile.title}</h3>
+          <p class="mt-4 text-sm leading-7 text-ink-soft">{tile.body}</p>
+        </article>
+      ))}
     </div>
   </div>
 </section>

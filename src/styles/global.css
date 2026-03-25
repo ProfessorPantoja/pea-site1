@@ -21,6 +21,31 @@
   }
 }
 
+@keyframes float-callout {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes sheen {
+  0% {
+    transform: translateX(-135%) skewX(-18deg);
+    opacity: 0;
+  }
+  18%,
+  56% {
+    opacity: 0.55;
+  }
+  100% {
+    transform: translateX(180%) skewX(-18deg);
+    opacity: 0;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -106,6 +131,10 @@ body::before {
     @apply inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-rose to-rose-soft px-7 py-4 text-sm font-extrabold uppercase tracking-[0.18em] text-white shadow-glow hover:-translate-y-1;
   }
 
+  .cta-primary--slim {
+    @apply px-4 py-3 text-[0.68rem] tracking-[0.14em] shadow-soft;
+  }
+
   .breathe {
     animation: breathe 2.8s ease-in-out infinite;
   }
@@ -151,6 +180,7 @@ body::before {
 
   .lia-float {
     @apply relative inline-flex items-center rounded-full shadow-glow;
+    animation: float-callout 2.8s ease-in-out infinite;
   }
 
   .lia-float__ring {
@@ -161,12 +191,60 @@ body::before {
     @apply relative inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-ink to-rose-deep px-4 py-3 text-white ring-1 ring-white/15;
   }
 
+  .lia-float__bubble::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 999px;
+    background: linear-gradient(120deg, transparent 18%, rgba(255, 255, 255, 0.32), transparent 62%);
+    animation: sheen 3.8s ease-in-out infinite;
+    pointer-events: none;
+  }
+
   .lia-float__avatar {
     @apply inline-flex h-12 w-12 items-center justify-center rounded-full bg-white text-sm font-black uppercase tracking-[0.16em] text-rose;
   }
 
   .lia-float__copy {
     @apply flex flex-col text-left;
+  }
+
+  .subsection-kicker {
+    @apply inline-flex items-center gap-2 rounded-full bg-ink px-4 py-2 text-[0.68rem] font-extrabold uppercase tracking-[0.2em] text-white;
+  }
+
+  .subsection-divider {
+    @apply relative rounded-[2rem] bg-white/70 px-6 py-6 shadow-soft ring-1 ring-white/70 backdrop-blur;
+  }
+
+  .section-curve {
+    @apply pointer-events-none absolute inset-x-0 top-0 z-[1] h-20 -translate-y-10 overflow-hidden sm:h-24 sm:-translate-y-12;
+  }
+
+  .section-curve::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 116%;
+    height: 100%;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 50% 100%;
+    border-bottom-right-radius: 50% 100%;
+    background:
+      radial-gradient(circle at 18% 12%, rgba(235, 133, 153, 0.12), transparent 34%),
+      radial-gradient(circle at 82% 16%, rgba(93, 189, 240, 0.12), transparent 30%),
+      rgba(255, 255, 255, 0.74);
+    box-shadow:
+      0 26px 48px rgba(47, 45, 49, 0.06),
+      inset 0 -1px 0 rgba(205, 199, 206, 0.56);
+  }
+
+  .section-curve--soft::before {
+    background:
+      radial-gradient(circle at 18% 12%, rgba(235, 133, 153, 0.16), transparent 34%),
+      radial-gradient(circle at 82% 16%, rgba(93, 189, 240, 0.16), transparent 30%),
+      rgba(247, 245, 248, 0.96);
   }
 }
 

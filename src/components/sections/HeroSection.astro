@@ -1,5 +1,5 @@
 ---
-import { eventMeta, heroRibbon, heroStats } from '../../data/site';
+import { eventMeta, heroHighlights, heroRibbon, heroStats } from '../../data/site';
 ---
 
 <section id="evento" class="section-space relative overflow-hidden pt-32 sm:pt-36">
@@ -71,13 +71,6 @@ import { eventMeta, heroRibbon, heroStats } from '../../data/site';
           <div class="absolute -left-8 top-8 hidden rounded-full bg-white/80 px-4 py-3 text-xs font-bold uppercase tracking-[0.2em] text-ink-soft shadow-soft lg:block">
             Energia real
           </div>
-          <div class="absolute -bottom-7 right-5 z-20 hidden rounded-3xl bg-ink px-5 py-4 text-sm text-white shadow-soft md:block">
-            <div class="text-[0.72rem] font-bold uppercase tracking-[0.28em] text-white/60">
-              Ingresso
-            </div>
-            <div class="mt-1 font-display text-3xl font-extrabold">{eventMeta.price}</div>
-          </div>
-
           <div class="surface-card relative overflow-hidden rounded-[2.3rem] bg-hero-aura p-4 sm:p-5">
             <div class="relative overflow-hidden rounded-[1.9rem]">
               <img
@@ -87,15 +80,26 @@ import { eventMeta, heroRibbon, heroStats } from '../../data/site';
               />
             </div>
 
-            <div class="absolute inset-x-6 bottom-6 rounded-[1.6rem] bg-white/86 p-5 backdrop-blur-xl">
-              <p class="text-[0.72rem] font-extrabold uppercase tracking-[0.28em] text-rose">
-                O que você vai encontrar
-              </p>
-              <div class="mt-3 grid grid-cols-2 gap-3 text-sm font-semibold text-ink">
-                <span class="rounded-2xl bg-surface px-3 py-2">Networking de verdade</span>
-                <span class="rounded-2xl bg-surface px-3 py-2">Demo de IA ao vivo</span>
-                <span class="rounded-2xl bg-surface px-3 py-2">Comida liberada</span>
-                <span class="rounded-2xl bg-surface px-3 py-2">Energia alta</span>
+            <div class="mt-5 grid gap-4 lg:grid-cols-[auto_1fr]">
+              <div class="rounded-[1.5rem] bg-ink px-5 py-5 text-white shadow-soft">
+                <div class="text-[0.72rem] font-bold uppercase tracking-[0.28em] text-white/60">
+                  Ingresso
+                </div>
+                <div class="mt-1 font-display text-4xl font-extrabold">{eventMeta.price}</div>
+                <p class="mt-2 text-sm text-white/72">Lote único com vagas limitadas.</p>
+              </div>
+
+              <div class="rounded-[1.6rem] bg-white/88 p-5 backdrop-blur-xl">
+                <p class="text-[0.72rem] font-extrabold uppercase tracking-[0.28em] text-rose">
+                  O que você vai viver
+                </p>
+                <div class="mt-4 flex flex-wrap gap-3 text-sm font-semibold text-ink">
+                  {heroHighlights.map((item) => (
+                    <span class="rounded-full bg-surface px-4 py-2.5 shadow-[inset_0_0_0_1px_rgba(205,199,206,0.55)]">
+                      {item}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -104,7 +108,7 @@ import { eventMeta, heroRibbon, heroStats } from '../../data/site';
         <div
           data-reveal
           style="--delay: 360ms"
-          class="reveal-ready glass-panel max-w-full overflow-hidden py-4"
+          class="reveal-ready mt-6 glass-panel max-w-full overflow-hidden py-4 sm:mt-8"
         >
           <div class="w-full overflow-hidden">
             <div class="flex w-fit min-w-max items-center gap-3 animate-marquee pr-3">

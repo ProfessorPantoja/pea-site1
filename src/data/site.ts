@@ -1,4 +1,10 @@
 // Placeholder content for the prototype. Replace contact and date details when the official data is approved.
+const ticketPhone = '5522998946111';
+const liaPhone = '5527992681959';
+
+const buildWhatsappUrl = (phone: string, text: string) =>
+  `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+
 export const eventMeta = {
   name: 'Pessoas em Ação',
   editionLabel: '6ª edição do Pessoas em Ação',
@@ -7,13 +13,18 @@ export const eventMeta = {
   duration: '5 horas de experiência',
   capacity: 'Apenas 100 vagas',
   price: 'R$150',
+  year: '2026',
   instagramHandle: '@pessoas.em.acao.oficial',
   instagramUrl: 'https://www.instagram.com/pessoas.em.acao.oficial/',
   email: 'pessoas.em.acao.oficial@gmail.com',
-  whatsappTicketUrl:
-    'https://wa.me/5522998946111?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20quero%20garantir%20minha%20vaga%20no%20Pessoas%20em%20A%C3%A7%C3%A3o.',
-  whatsappSupportUrl:
-    'https://wa.me/5522998946111?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20falar%20com%20algu%C3%A9m%20para%20entender%20melhor%20o%20evento.',
+  whatsappTicketUrl: buildWhatsappUrl(
+    ticketPhone,
+    'Olá, vim do site e quero garantir minha vaga no Pessoas em Ação.'
+  ),
+  whatsappSupportUrl: buildWhatsappUrl(
+    ticketPhone,
+    'Olá, vim do site e gostaria de falar com alguém para entender melhor o evento.'
+  ),
 };
 
 export const navLinks = [
@@ -27,15 +38,17 @@ export const navLinks = [
 
 export const liaMeta = {
   name: 'LIA',
-  role: 'Atendente inteligente do evento',
-  botUrl:
-    'https://wa.me/5527992681959?text=Oi%2C%20LIA.%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Pessoas%20em%20A%C3%A7%C3%A3o.',
-  badge: 'Atendimento IA',
+  role: 'Assistente de IA do evento',
+  botUrl: buildWhatsappUrl(
+    liaPhone,
+    'Oi, LIA. Vim do site e quero mais informações sobre o Pessoas em Ação.'
+  ),
+  badge: 'Fale com a LIA',
   headline: 'A LIA responde às suas dúvidas sobre o evento em segundos.',
   body:
     'Se você quer entender ingresso, horário, público, local, dinâmica do encontro ou simplesmente saber se esse evento faz sentido para você, a LIA entra para orientar sem fricção.',
   ctaLabel: 'Falar com a LIA agora',
-  floatingLabel: 'Dúvidas? Chame a LIA',
+  floatingLabel: 'Fale com a LIA',
 } as const;
 
 export const liaHighlights = [
@@ -46,10 +59,34 @@ export const liaHighlights = [
 ] as const;
 
 export const liaQuestions = [
-  'Que horas começa o evento?',
-  'O que está incluso no ingresso?',
-  'Esse evento é para mim?',
-  'Como eu garanto minha vaga?',
+  {
+    label: 'Que horas começa o evento?',
+    url: buildWhatsappUrl(
+      liaPhone,
+      'Oi, LIA. Vim do site e quero saber que horas começa o evento.'
+    ),
+  },
+  {
+    label: 'O que está incluso no ingresso?',
+    url: buildWhatsappUrl(
+      liaPhone,
+      'Oi, LIA. Vim do site e quero saber o que está incluso no ingresso.'
+    ),
+  },
+  {
+    label: 'Esse evento é para mim?',
+    url: buildWhatsappUrl(
+      liaPhone,
+      'Oi, LIA. Vim do site e quero entender se esse evento faz sentido para mim.'
+    ),
+  },
+  {
+    label: 'Como eu garanto minha vaga?',
+    url: buildWhatsappUrl(
+      liaPhone,
+      'Oi, LIA. Vim do site e quero saber como eu garanto minha vaga.'
+    ),
+  },
 ] as const;
 
 export const heroStats = [
@@ -59,13 +96,20 @@ export const heroStats = [
   { value: 'IA + networking', label: 'conteúdo e conexão real' },
 ] as const;
 
-export const heroRibbon = [
+export const heroHighlights = [
   'Networking de verdade',
-  'Conhecimento prático',
-  'Experiência memorável',
   'Demo de IA ao vivo',
+  'Comida liberada',
+  'Energia alta',
+] as const;
+
+export const heroRibbon = [
+  '6ª edição presencial',
+  'Lote único',
+  'Acesso pelo WhatsApp',
+  'Sem entrada na hora',
   'Cabo Frio, RJ',
-  'Energia alta do início ao fim',
+  'Pessoas certas no mesmo ambiente',
 ] as const;
 
 export const pillars = [
@@ -133,14 +177,17 @@ export const proofMetrics = [
 
 export const proofTiles = [
   {
+    tag: 'Conexões',
     title: 'Conexões que continuam depois do evento',
     body: 'O tipo de encontro que segue rendendo conversa, parceria e proximidade nos dias seguintes.',
   },
   {
+    tag: 'Aplicação',
     title: 'Aprendizado que sai do palco e vai para a vida real',
     body: 'A experiência foi desenhada para gerar aplicação prática, não só inspiração momentânea.',
   },
   {
+    tag: 'Ambiente',
     title: 'Ambiente que faz as pessoas se abrirem',
     body: 'Quando o clima está certo, a energia muda. E isso acelera troca, confiança e oportunidade.',
   },

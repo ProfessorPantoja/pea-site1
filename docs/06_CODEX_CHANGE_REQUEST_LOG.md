@@ -183,3 +183,13 @@ Log numerado das mudancas pedidas a partir desta etapa do projeto.
 **Objetivo:** deixar a comunicação mais profissional, natural e correta para o público brasileiro.
 
 **Status:** concluido
+
+## 017
+
+**Pedido:** refinar a hierarquia visual da landing, deixando as transições de sessão mais claras, limpando overlays ruins no hero, organizando melhor a prova social e melhorando a experiência da LIA.
+
+**Acao:** reduzido e afinado o CTA do topo, removido o bloco sobre a imagem do hero e levado os highlights para fora da foto, dado mais respiro ao letreiro, reorganizada a prova social para começar com título antes do vídeo no mobile, criadas subseções claras para vídeos e legado do evento, trocadas tags repetitivas por rótulos mais úteis, transformados os highlights da LIA em bullets, deixadas as perguntas rápidas clicáveis com ida direta ao WhatsApp da LIA, reforçado o efeito do botão flutuante, melhorada a legibilidade do bloco de escassez e substituído o texto final pouco útil do rodapé por `Pessoas em Ação · 2026`.
+
+**Objetivo:** deixar o site com leitura mais premium, reduzir sensação de repetição e tornar cada bloco mais compreensível antes da próxima rodada de refinos.
+
+**Status:** concluido
