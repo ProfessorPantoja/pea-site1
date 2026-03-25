@@ -1,0 +1,37 @@
+---
+import { liaMeta } from '../data/site';
+---
+
+<div class="fixed bottom-4 right-4 z-[70] sm:bottom-5 sm:right-5">
+  <div class="flex max-w-[18rem] flex-col items-end gap-3">
+    <div
+      data-reveal
+      style="--delay: 420ms"
+      class="reveal-ready hidden rounded-[1.6rem] bg-white/92 px-4 py-3 text-right shadow-soft ring-1 ring-mist backdrop-blur md:block"
+    >
+      <div class="text-[0.68rem] font-extrabold uppercase tracking-[0.2em] text-rose">
+        {liaMeta.badge}
+      </div>
+      <p class="mt-2 text-sm font-semibold leading-6 text-ink">{liaMeta.floatingLabel}</p>
+    </div>
+
+    <a
+      href={liaMeta.botUrl}
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Falar com a LIA"
+      class="lia-float group"
+    >
+      <span class="lia-float__ring"></span>
+      <span class="lia-float__bubble">
+        <span class="lia-float__avatar">LIA</span>
+        <span class="lia-float__copy">
+          <span class="text-[0.65rem] font-extrabold uppercase tracking-[0.2em] text-white/72">
+            Atendimento IA
+          </span>
+          <span class="text-sm font-bold leading-5 text-white">{liaMeta.name}</span>
+        </span>
+      </span>
+    </a>
+  </div>
+</div>

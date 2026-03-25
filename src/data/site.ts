@@ -19,7 +19,35 @@ export const navLinks = [
   { href: '#publico', label: 'Para quem' },
   { href: '#conduz', label: 'Quem conduz' },
   { href: '#prova-social', label: 'Prova social' },
+  { href: '#lia', label: 'LIA' },
   { href: '#ingresso', label: 'Ingresso' },
+] as const;
+
+export const liaMeta = {
+  name: 'LIA',
+  role: 'Atendente inteligente do evento',
+  botUrl:
+    'https://wa.me/5527992681959?text=Oi%2C%20LIA.%20Vim%20do%20site%20e%20quero%20mais%20informacoes%20sobre%20o%20Pessoas%20em%20Acao.',
+  badge: 'Atendimento IA',
+  headline: 'A LIA responde suas duvidas sobre o evento em segundos.',
+  body:
+    'Se voce quer entender ingresso, horario, publico, local, dinamica do encontro ou simplesmente saber se esse evento faz sentido para voce, a LIA entra para orientar sem friccao.',
+  ctaLabel: 'Falar com a LIA agora',
+  floatingLabel: 'Duvidas? Chame a LIA',
+} as const;
+
+export const liaHighlights = [
+  'Tira duvidas do evento em tempo real',
+  'Explica ingresso, acesso e formato',
+  'Ajuda quem ainda esta indeciso',
+  'Encaminha a conversa para a acao',
+] as const;
+
+export const liaQuestions = [
+  'Que horas comeca o evento?',
+  'O que esta incluso no ingresso?',
+  'Esse evento e para mim?',
+  'Como eu garanto minha vaga?',
 ] as const;
 
 export const heroStats = [

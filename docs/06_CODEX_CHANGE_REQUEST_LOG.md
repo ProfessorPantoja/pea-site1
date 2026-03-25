@@ -108,3 +108,25 @@ Log numerado das mudancas pedidas a partir desta etapa do projeto.
 **Objetivo:** permitir reproducao com som na secao de prova social sem voltar aos arquivos brutos originais.
 
 **Status:** concluido
+
+## 010
+
+**Pedido:** adicionar a LIA como elemento forte do site, com destaque flutuante e uma secao propria na landing.
+
+**Acao:** criada a base de conteudo da LIA em `site.ts`, adicionada uma secao dedicada para apresentar a atendente inteligente do evento e incluido um CTA flutuante fixo para chamar atencao durante toda a navegacao.
+
+**Objetivo:** transformar a LIA em um ativo real de conversao, ajudando o visitante a tirar duvidas do evento e reduzir friccao antes da compra.
+
+**Status:** concluido
+
+## 011
+
+**Pedido:** configurar a LIA com o numero real de WhatsApp e uma mensagem padrao que identifique a origem pelo site.
+
+**Acao:** atualizado o link da LIA para o numero `27 99268-1959`, com a mensagem:
+
+`Oi, LIA. Vim do site e quero mais informacoes sobre o Pessoas em Acao.`
+
+**Objetivo:** deixar claro no atendimento que o contato veio da landing page, melhorando contexto e conversao.
+
+**Status:** concluido
