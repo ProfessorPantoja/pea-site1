@@ -1,6 +1,7 @@
-# Estrutura do Site - Pessoas em Acao
+# [CODEX-02] Estrutura do Site - Pessoas em Acao
 **Autor:** Codex GPT-5
-**Base:** `PeA_Documento_Definitivo_OPUS46.md`
+**Identificador:** CODEX-02
+**Base:** `../context/PeA_Documento_Definitivo_OPUS46.md`
 **Objetivo:** registrar a estrutura proposta da landing page para avaliacao por outra IA antes da implementacao
 
 ---

@@ -1,7 +1,8 @@
-# Proposta de Estrutura do Site - Pessoas em Ação
+# [GEMINI-01] Proposta de Estrutura do Site - Pessoas em Ação
 **Autor:** Gemini 3-1 Pro
+**Identificador:** GEMINI-01
 
-Com base no documento **PeA_Documento_Definitivo_OPUS46.md**, o evento "Pessoas em Ação" tem uma identidade energética, focada em networking, conhecimento prático, IA e transformação. 
+Com base no documento **../context/PeA_Documento_Definitivo_OPUS46.md**, o evento "Pessoas em Ação" tem uma identidade energética, focada em networking, conhecimento prático, IA e transformação. 
 
 Esta é a minha proposta de estrutura de seções para a **Landing Page de Alta Conversão**, focada em levar o usuário para o WhatsApp para garantir a compra e tirar dúvidas. Utilizamos a data fictícia **02/05** (com alerta de que será ajustada).
 

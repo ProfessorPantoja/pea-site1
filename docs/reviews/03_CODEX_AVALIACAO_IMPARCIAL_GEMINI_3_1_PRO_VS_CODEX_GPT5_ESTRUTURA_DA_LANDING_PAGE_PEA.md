@@ -1,6 +1,7 @@
-# Avaliacao Imparcial - Gemini 3.1 Pro vs Codex GPT-5 na Estrutura da Landing Page do Pessoas em Acao
+# [CODEX-03] Avaliacao Imparcial - Gemini 3.1 Pro vs Codex GPT-5 na Estrutura da Landing Page do Pessoas em Acao
+**Identificador:** CODEX-03
 
-**Objetivo deste documento:** registrar, de forma clara e imparcial, a comparacao entre as propostas de estrutura de site feitas pelos arquivos `ESTRUTURA_SITE_GEMINI_3_1_PRO.md` e `ESTRUTURA_SITE_CODEX_GPT5.md`.
+**Objetivo deste documento:** registrar, de forma clara e imparcial, a comparacao entre as propostas de estrutura de site feitas pelos arquivos `../structures/01_GEMINI_ESTRUTURA_SITE_3_1_PRO.md` e `../structures/02_CODEX_ESTRUTURA_SITE_GPT5.md`.
 
 **Contexto:** a comparacao considera que o objetivo do projeto, neste momento, e definir a estrutura de uma landing page que pareca oficial, seja convincente comercialmente e possa ser implementada depois sem ambiguidades.
 
@@ -8,8 +9,8 @@
 
 ## Arquivos avaliados
 
-- `ESTRUTURA_SITE_GEMINI_3_1_PRO.md`
-- `ESTRUTURA_SITE_CODEX_GPT5.md`
+- `../structures/01_GEMINI_ESTRUTURA_SITE_3_1_PRO.md`
+- `../structures/02_CODEX_ESTRUTURA_SITE_GPT5.md`
 
 ---
 

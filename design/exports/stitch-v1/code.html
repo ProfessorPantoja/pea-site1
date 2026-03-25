@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pessoas em Ação - 6ª Edição</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error": "#b31b25",
+              "secondary-container": "#add6ff",
+              "surface-bright": "#faf5fa",
+              "on-tertiary-fixed-variant": "#6c2034",
+              "tertiary-fixed": "#fe94a9",
+              "primary-fixed-dim": "#ee8394",
+              "surface-container-high": "#e6e1e7",
+              "outline": "#79767a",
+              "surface-dim": "#d8d2da",
+              "on-primary-fixed": "#390010",
+              "error-dim": "#9f0519",
+              "inverse-primary": "#fe90a1",
+              "secondary-fixed": "#add6ff",
+              "surface-container-low": "#f5eff5",
+              "on-secondary": "#ebf3ff",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-container": "#60172b",
+              "on-error-container": "#570008",
+              "surface-tint": "#973e4f",
+              "secondary-fixed-dim": "#8fc9ff",
+              "primary-container": "#fe90a1",
+              "primary": "#973e4f",
+              "background": "#faf5fa",
+              "on-primary-fixed-variant": "#6b1c2e",
+              "secondary-dim": "#005483",
+              "on-surface-variant": "#5d5a5f",
+              "inverse-on-surface": "#a09ca0",
+              "secondary": "#006095",
+              "on-tertiary": "#ffeff0",
+              "on-primary-container": "#5f1226",
+              "surface-container-highest": "#e1dbe2",
+              "on-tertiary-fixed": "#3e0014",
+              "on-surface": "#302e32",
+              "primary-dim": "#883244",
+              "error-container": "#fb5151",
+              "surface": "#faf5fa",
+              "surface-variant": "#e1dbe2",
+              "outline-variant": "#b0acb1",
+              "on-background": "#302e32",
+              "tertiary-container": "#fe94a9",
+              "tertiary-fixed-dim": "#ee879b",
+              "tertiary-dim": "#853447",
+              "on-secondary-container": "#004b76",
+              "tertiary": "#943f53",
+              "on-secondary-fixed-variant": "#005585",
+              "surface-container": "#ece6ed",
+              "on-primary": "#ffeff0",
+              "on-secondary-fixed": "#003758",
+              "inverse-surface": "#0f0e11",
+              "on-error": "#ffefee",
+              "primary-fixed": "#fe90a1"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .kinetic-blur {
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+      .asymmetric-shape {
+        clip-path: circle(70% at 80% 20%);
+      }
+    </style>
+</head>
+<body class="bg-background font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black text-rose-700 font-headline tracking-tight">Pessoas em Ação</div>
+<div class="hidden md:flex items-center gap-8 font-headline font-bold tracking-tight">
+<a class="text-rose-700 border-b-2 border-rose-600 pb-1 hover:scale-105 transition-transform duration-300" href="#evento">O Evento</a>
+<a class="text-slate-600 hover:text-rose-500 hover:scale-105 transition-transform duration-300" href="#pilares">Pilares</a>
+<a class="text-slate-600 hover:text-rose-500 hover:scale-105 transition-transform duration-300" href="#mentores">Mentores</a>
+<a class="text-slate-600 hover:text-rose-500 hover:scale-105 transition-transform duration-300" href="#depoimentos">Depoimentos</a>
+<a class="text-slate-600 hover:text-rose-500 hover:scale-105 transition-transform duration-300" href="#ingressos">Ingressos</a>
+</div>
+<a class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold hover:scale-105 transition-transform active:scale-95 duration-150" href="#ingressos">Garantir Vaga</a>
+</div>
+</nav>
+<main class="pt-20">
+<!-- HERO SECTION -->
+<section class="relative overflow-hidden min-h-[921px] flex items-center px-6 lg:px-12 py-20" id="evento">
+<div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center relative z-10">
+<div class="lg:col-span-7">
+<span class="inline-block font-label text-sm font-bold tracking-[0.2em] text-primary uppercase mb-6">6ª edição da essência</span>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight text-on-surface mb-8 leading-[1.1]">
+                        Ainda esperando o <span class="text-primary italic">momento certo</span> para crescer? Ele é agora.
+                    </h1>
+<p class="font-body text-xl text-on-surface-variant mb-10 max-w-xl leading-relaxed">
+                        Networking, conhecimento e entretenimento num só lugar. Encontre a clareza que falta para o seu próximo passo.
+                    </p>
+<div class="flex flex-wrap gap-4 mb-12">
+<div class="flex items-center gap-2 bg-secondary-container text-on-secondary-container px-4 py-2 rounded-lg font-bold">
+<span class="material-symbols-outlined text-xl" data-icon="calendar_today">calendar_today</span>
+                            15 DE OUTUBRO
+                        </div>
+<div class="flex items-center gap-2 bg-surface-container-highest px-4 py-2 rounded-lg font-bold">
+<span class="material-symbols-outlined text-xl" data-icon="location_on">location_on</span>
+                            Cabo Frio, RJ
+                        </div>
+<div class="flex items-center gap-2 bg-primary-container text-on-primary-container px-4 py-2 rounded-lg font-bold">
+<span class="material-symbols-outlined text-xl" data-icon="groups">groups</span>
+                            Apenas 100 vagas
+                        </div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-4 rounded-full font-bold text-center text-lg hover:scale-105 transition-transform shadow-lg" href="#ingressos">Garantir minha vaga</a>
+<a class="bg-surface-container-highest text-on-surface px-8 py-4 rounded-full font-bold text-center text-lg flex items-center justify-center gap-2 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+                            Falar no WhatsApp
+                        </a>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500">
+<img alt="People laughing" class="w-full h-full object-cover" data-alt="Group of diverse people laughing and talking in a bright modern event space, high-energy candid photography, warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnQjwCdcNu6-p8asohb_pcqk2myDgdjEYIGl337AqE88md4WS79UhJxl1klGScBbiVv_GI54tMa97XopLyy45dyTSy01PloGV8j9kLxrY2chIXYmGqKYpmS6-feoXAS03kJ2HzIIa-fp1Acj9zTOpTsBIy-gP3gGYgDo3k_y5V9aLc48z6Yq9sCM-ioW7S6dZjMCRbGTKHSfRYDV7G9Dz1O3ON8ErgLW1SoQpnWID1EtROXKF4wRS1pRBfuuyy7Q3pDwvudTiPTgT2"/>
+</div>
+<!-- Decorative circular shape -->
+<div class="absolute -top-12 -right-12 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -z-10"></div>
+<div class="absolute -bottom-12 -left-12 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-10"></div>
+</div>
+</div>
+</section>
+<!-- O QUE É + PILARES -->
+<section class="py-24 px-6 lg:px-12 bg-surface-container-low" id="pilares">
+<div class="max-w-7xl mx-auto">
+<div class="grid lg:grid-cols-2 gap-16 mb-20 items-end">
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
+                        Não é só um evento.<br/>
+<span class="text-secondary">É o tipo de ambiente que muda o seu ritmo.</span>
+</h2>
+<p class="text-lg text-on-surface-variant max-w-md">
+                        A transformação acontece quando saímos da rotina e nos permitimos novas conexões. Pessoas em Ação é o catalisador que você precisa.
+                    </p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl relative overflow-hidden group hover:-translate-y-2 transition-transform duration-300">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500"></div>
+<span class="material-symbols-outlined text-5xl text-primary mb-6" data-icon="key">key</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Acesso</h3>
+<p class="text-on-surface-variant leading-relaxed">Conecte-se com pessoas que já trilharam o caminho e estão prontas para compartilhar estratégias reais.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl relative overflow-hidden group hover:-translate-y-2 transition-transform duration-300">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500"></div>
+<span class="material-symbols-outlined text-5xl text-secondary mb-6" data-icon="eco">eco</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Ambiente</h3>
+<p class="text-on-surface-variant leading-relaxed">Um ecossistema vibrante onde o crescimento é a única opção. Livre de julgamentos e focado em ação.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl relative overflow-hidden group hover:-translate-y-2 transition-transform duration-300">
+<div class="absolute top-0 right-0 w-32 h-32 bg-tertiary-fixed/10 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500"></div>
+<span class="material-symbols-outlined text-5xl text-tertiary mb-6" data-icon="bolt">bolt</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Transformação</h3>
+<p class="text-on-surface-variant leading-relaxed">Não saia a mesma pessoa. Dinâmicas e conteúdos projetados para gerar mudanças imediatas de mindset.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- PARA QUEM É -->
+<section class="py-24 px-6 lg:px-12 bg-surface">
+<div class="max-w-7xl mx-auto text-center mb-16">
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tight mb-4">Esse evento faz sentido para você?</h2>
+<p class="text-xl text-on-surface-variant max-w-2xl mx-auto">Se você se reconhece aqui, esse ambiente foi pensado para você.</p>
+</div>
+<div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-6 mb-16">
+<div class="bg-surface-container rounded-lg p-8 border-b-4 border-primary">
+<h3 class="font-headline text-xl font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="woman">woman</span> Empreendedoras
+                    </h3>
+<p class="text-on-surface-variant">Mulheres que buscam equilibrar carreira, propósito e rede de apoio qualificada.</p>
+</div>
+<div class="bg-surface-container rounded-lg p-8 border-b-4 border-secondary">
+<h3 class="font-headline text-xl font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="business_center">business_center</span> Profissionais
+                    </h3>
+<p class="text-on-surface-variant">Líderes e empreendedores que precisam renovar suas estratégias e ampliar networking.</p>
+</div>
+<div class="bg-surface-container rounded-lg p-8 border-b-4 border-tertiary">
+<h3 class="font-headline text-xl font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary" data-icon="rocket_launch">rocket_launch</span> Jovens com ambição
+                    </h3>
+<p class="text-on-surface-variant">Quem está começando mas já entendeu que estar no lugar certo encurta caminhos.</p>
+</div>
+</div>
+<div class="text-center">
+<p class="font-headline text-2xl font-bold text-on-surface opacity-50 italic">"Não é para quem quer continuar no automático."</p>
+</div>
+</section>
+<!-- QUEM CONDUZ -->
+<section class="py-24 px-6 lg:px-12 bg-surface-container-low overflow-hidden" id="mentores">
+<div class="max-w-7xl mx-auto">
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tight mb-16 text-center">Quem conduz essa experiência</h2>
+<div class="grid md:grid-cols-3 gap-12">
+<!-- Mentor 1 -->
+<div class="text-center group">
+<div class="relative mb-8 inline-block">
+<div class="w-64 h-64 rounded-full overflow-hidden border-8 border-white shadow-xl relative z-10 mx-auto">
+<img alt="Marceni" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Professional woman portrait, smiling confidently, psychologist and keynote speaker profile photo, soft office background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClcl0DG3cbzgjHhQI27VZK-XTlt9CJfqxphe5fNWw1lxYEbBjErrOYqYs8jD2BrEc9LmASbVUqPVWdZzfaoWEMPKkovGxGwJtQeNWrRPKDzme6xeczLJKRxYLiB01tJ-r62-zr7mV3QXB4_HNB9_OIFF8El5duWt3BaHCrZ8b16mUytloE4ywZ8_PJyOTVDC1wHaTphbcNF6Oh3ns1KVuvlHPhJ4FDy5pjQ7PxE0q5RnUi6Ul_-Oo6qctDwJ-L--KyNZcOeS8iP8TD"/>
+</div>
+<div class="absolute -bottom-4 -right-4 w-24 h-24 bg-primary rounded-full -z-0 opacity-20 animate-pulse"></div>
+</div>
+<h4 class="font-headline text-2xl font-bold mb-2">Marceni</h4>
+<p class="text-primary font-bold mb-4">Psicóloga e Palestrante Principal</p>
+<p class="text-on-surface-variant leading-relaxed">Especialista em comportamento humano e desbloqueio de potencial.</p>
+</div>
+<!-- Mentor 2 -->
+<div class="text-center group">
+<div class="relative mb-8 inline-block">
+<div class="w-64 h-64 rounded-full overflow-hidden border-8 border-white shadow-xl relative z-10 mx-auto">
+<img alt="Isabela" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Modern woman with energetic expression, lifestyle and mindset coach, bright natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8x2yKtzEDlc7KMrhoEmcmGkN-hL2cmmDxz-JN75mTJxIqRDE7MoqXmIG0ytDeFcPRQJK4UJE3H2F8UQzMonJWq-MU4Fl0hLlmEg7etYzZgHizVTUqVK-vYZe94CJVfqsz6NEyy85zyfm2_kaFoiuienTALZRIIqxW-BpARGp5MtkGss8DtYsCamWN9fZqt8R4HRCVq_NXSaL9F0JdvQTupNind-gHcZvaf1knFsAej5t9y-7JCKr2KhJQjcLNYGWJVXLV0pfDNMWw"/>
+</div>
+<div class="absolute -bottom-4 -left-4 w-24 h-24 bg-secondary rounded-full -z-0 opacity-20"></div>
+</div>
+<h4 class="font-headline text-2xl font-bold mb-2">Isabela</h4>
+<p class="text-secondary font-bold mb-4">Lei da Atração</p>
+<p class="text-on-surface-variant leading-relaxed">Focada em manifestação consciente e redirecionamento de energia vital.</p>
+</div>
+<!-- Mentor 3 -->
+<div class="text-center group">
+<div class="relative mb-8 inline-block">
+<div class="w-64 h-64 rounded-full overflow-hidden border-8 border-white shadow-xl relative z-10 mx-auto">
+<img alt="Fabio Pantoja" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Young professional man looking savvy and intelligent, tech strategist, studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiBm-v4Q8xaaHDkYy5iuGmIdc0nQLv4aqv13Wb0Q9lxW8-KvR2F5Kq5d-Kv4Qsj3YjiL36c_5RMInpWO7k6NYHZpBr6oBKCZmorw9bHzAP_z-wPkSqHFjGE7L_wvhoTn-P2erF3Xi7V6IBvJ7rUBIX8Bp06ryPWDyXUjiOqvSlNSyLpwPccg8NwTQDVHprgEqaEb1xiFJaAWJdY-R35RgNKTWCVa7ZKh_FflZMdK9w6Mn3WeAzAga87dUuWoioBiWp1fowWUFKwzAk"/>
+</div>
+<div class="absolute top-0 right-0 w-24 h-24 bg-on-surface-variant rounded-full -z-0 opacity-10"></div>
+</div>
+<h4 class="font-headline text-2xl font-bold mb-2">Fabio Pantoja</h4>
+<p class="text-on-surface-variant font-bold mb-4">Estrategista e Especialista em IA</p>
+<p class="text-on-surface-variant leading-relaxed">Inovação e ferramentas práticas para acelerar resultados no digital.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- PROVA SOCIAL -->
+<section class="py-24 px-6 lg:px-12 bg-surface" id="depoimentos">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-16">
+<div class="text-left">
+<h2 class="font-headline text-4xl font-extrabold tracking-tight mb-4">Isso não começou hoje.</h2>
+<p class="text-xl text-on-surface-variant">5 edições anteriores. Centenas de pessoas impactadas.</p>
+</div>
+<div class="flex gap-8">
+<div class="text-center">
+<div class="text-4xl font-black text-primary mb-1">500+</div>
+<div class="text-sm font-label uppercase tracking-widest text-on-surface-variant">Participantes</div>
+</div>
+<div class="text-center">
+<div class="text-4xl font-black text-secondary mb-1">5</div>
+<div class="text-sm font-label uppercase tracking-widest text-on-surface-variant">Edições</div>
+</div>
+</div>
+</div>
+<div class="grid lg:grid-cols-12 gap-8">
+<div class="lg:col-span-8 grid md:grid-cols-2 gap-6">
+<div class="bg-surface-container-low p-8 rounded-xl shadow-sm border-l-4 border-primary">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="format_quote">format_quote</span>
+<p class="text-on-surface-variant mb-6 leading-relaxed italic">"O networking aqui vale por um ano inteiro de prospecção. O ambiente é surreal e a entrega supera qualquer expectativa."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-slate-200"></div>
+<div class="font-bold">Paula S., Empresária</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl shadow-sm border-l-4 border-secondary">
+<span class="material-symbols-outlined text-secondary mb-4" data-icon="format_quote">format_quote</span>
+<p class="text-on-surface-variant mb-6 leading-relaxed italic">"Um divisor de águas. Saí com ferramentas práticas que apliquei na minha agência no dia seguinte."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-slate-200"></div>
+<div class="font-bold">Ricardo M., Estrategista</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 relative h-full min-h-[300px] rounded-xl overflow-hidden group">
+<img alt="Event video" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Cinematic shot of a crowd at a professional seminar, dynamic lighting, focused audience, energetic atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoRmn3P9zvTBAcP0CAq0v-oJqr2a0-Lf1wZO01avsixaQS-JHggyto4MCEXP_a1y1Qhz_u9jMFaNv9vmhzhZcBWy9GPQDtcvyoZLvrap57_DN5h8VRwXVSIwf1lan8R7TYfwXEZqFm7NQBqMk_hDQCoip1t0MKNn7hnJJ4wBy4mVAMxMrBpNJri7qpPpTflitxL_LTEmR6sacdwO_tNq89eP_zMOXcr_GH0XL36e7trof6291KIErTCmPicNPoGGekvFAikfAsyGQB"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-2xl cursor-pointer hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="play_arrow" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-4 left-4 text-white font-bold bg-black/40 px-3 py-1 rounded backdrop-blur-sm">
+                            ASSISTIR AFTERMOVIE
+                        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- INGRESSO -->
+<section class="py-24 px-6 lg:px-12 bg-slate-900 text-white overflow-hidden relative" id="ingressos">
+<!-- Background element -->
+<div class="absolute top-0 right-0 w-[50%] h-full bg-primary/10 asymmetric-shape opacity-50"></div>
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tight mb-8">
+                        R$150 para viver uma experiência que você vai lembrar por muito tempo.
+                    </h2>
+<p class="text-2xl text-slate-400 font-headline italic max-w-2xl mx-auto">
+                        "Não imaginei que pagaria tão pouco num evento tão incrível."
+                    </p>
+</div>
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div class="bg-white text-on-surface p-10 md:p-12 rounded-xl shadow-2xl relative">
+<div class="absolute -top-6 left-12 bg-primary text-white px-6 py-2 rounded-full font-bold shadow-lg">LOTE ÚNICO</div>
+<div class="mb-8">
+<h3 class="text-3xl font-headline font-black mb-2">Ingresso presencial completo</h3>
+<div class="flex items-baseline gap-2">
+<span class="text-5xl font-black text-rose-700">R$150</span>
+<span class="text-on-surface-variant">pago uma única vez</span>
+</div>
+</div>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-3 font-medium">
+<span class="material-symbols-outlined text-green-500" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Entrada para o evento presencial
+                            </li>
+<li class="flex items-center gap-3 font-medium">
+<span class="material-symbols-outlined text-green-500" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Alimentação inclusa (Coffee Break premium)
+                            </li>
+<li class="flex items-center gap-3 font-medium">
+<span class="material-symbols-outlined text-green-500" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Acesso a 4 palestras exclusivas
+                            </li>
+<li class="flex items-center gap-3 font-medium">
+<span class="material-symbols-outlined text-green-500" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Dinâmicas de grupo e Networking guiado
+                            </li>
+<li class="flex items-center gap-3 font-medium">
+<span class="material-symbols-outlined text-green-500" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Experiência sensorial completa
+                            </li>
+</ul>
+<a class="block w-full text-center bg-primary text-on-primary py-5 rounded-full font-black text-xl hover:scale-[1.02] transition-transform active:scale-95 shadow-xl" href="#">Reservar meu ingresso agora</a>
+</div>
+<div class="space-y-8">
+<div class="bg-slate-800/50 p-8 rounded-xl backdrop-blur-lg border border-slate-700">
+<h4 class="font-headline text-2xl font-bold mb-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-rose-400" data-icon="priority_high">priority_high</span>
+                                Escassez Real
+                            </h4>
+<p class="text-slate-300 leading-relaxed text-lg">
+                                O espaço comporta exatamente 100 pessoas. Não vendemos além da nossa capacidade para garantir a qualidade do networking e o conforto de todos. Quando atingirmos o limite, as vendas serão encerradas imediatamente.
+                            </p>
+</div>
+<div class="flex items-center gap-4 bg-slate-800/30 p-6 rounded-xl">
+<div class="flex -space-x-3">
+<div class="w-12 h-12 rounded-full border-2 border-slate-900 bg-slate-400 overflow-hidden">
+<img alt="User" data-alt="close up of a man's face" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpNns48fWSLNGMkIZyPAZxCOntlJB7My7RLXkJGtRHl9MmxR3ed-B5sbeJu8KryPa9U2gYQO-9jqdi7zAgMI_SWy1aZtigHOlgopQHACRKeXYJ1PMpytL-zXbmbGQBeoABvcrbdjm32UEpFdAmjuKi3NpZzZgKUkngybQNFDBztOdlt5153NfUoLqVY3wMT3mg3udbN8Hk_SKbPrKaMFIsYvCBtKbUEC5mUv2yYTektLQ_YqJpevGV0tBzLk8yCw5QZCRvKzEdYaj0"/>
+</div>
+<div class="w-12 h-12 rounded-full border-2 border-slate-900 bg-slate-400 overflow-hidden">
+<img alt="User" data-alt="close up of a woman's face" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3wsy7DAZECu_4mvwyVxbL6tQuorcZ8GUiIZePRKxvLZMxm8zMHCsoS3WbAuMtLcIgd13_fX0ZjS00j0QKSpKd4sRk9ce92MJtaPdOCkkyfCWyMVV-zEtMAwlK7zYihYzgmkhnDKvArFma5kndGQUZSKQqbHRJlqZUEhywLTuqI5jlY67Ck8sExxWuX_a744eaZU-ycOyn5GwKNiFqGljIBOM8BrDU21hIa---_n19LEU_U-paF_ZbyCbmOamGryrD6N5c7qFuM4Ns"/>
+</div>
+<div class="w-12 h-12 rounded-full border-2 border-slate-900 bg-slate-700 flex items-center justify-center font-bold text-xs">+82</div>
+</div>
+<p class="text-slate-300 text-sm font-bold">82 pessoas já garantiram suas vagas nas últimas 48h.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FINAL CTA -->
+<section class="py-24 px-6 lg:px-12 bg-primary-container/30 relative overflow-hidden">
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tight mb-6">Se você sente que precisa mudar de ambiente, esse é o seu momento.</h2>
+<p class="text-xl text-on-surface mb-10">As vagas são limitadas. Entre em contato e garanta seu lugar na 6ª edição.</p>
+<a class="inline-flex items-center gap-4 bg-primary text-on-primary px-10 py-5 rounded-full font-black text-2xl hover:scale-105 transition-transform shadow-2xl" href="#">
+<span class="material-symbols-outlined text-3xl" data-icon="chat">chat</span>
+                    Garantir minha vaga no WhatsApp
+                </a>
+</div>
+<!-- Decorative pulses -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full -z-0">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] border border-primary/10 rounded-full"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border border-primary/5 rounded-full"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 bg-slate-50 dark:bg-slate-950">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto">
+<div class="text-lg font-bold text-slate-900 dark:text-slate-100">Pessoas em Ação</div>
+<p class="font-['Manrope'] text-sm text-slate-500">
+                © 2024 Pessoas em Ação. Todos os direitos reservados.
+            </p>
+<div class="flex gap-6 font-['Manrope'] text-sm">
+<a class="text-slate-500 hover:text-rose-500 hover:underline transition-all" href="#">Termos de Uso</a>
+<a class="text-slate-500 hover:text-rose-500 hover:underline transition-all" href="#">Privacidade</a>
+<a class="text-slate-500 hover:text-rose-500 hover:underline transition-all" href="#">Contato</a>
+<a class="text-slate-500 hover:text-rose-500 hover:underline transition-all" href="#">Instagram</a>
+<a class="text-slate-500 hover:text-rose-500 hover:underline transition-all" href="#">LinkedIn</a>
+</div>
+</div>
+</footer>
+</body></html>
