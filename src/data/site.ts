@@ -79,19 +79,19 @@ export const hosts = [
     name: 'Marceni',
     role: 'Psicologa, palestrante principal e alma do evento',
     body: 'Conduz a experiencia com foco em conexao, emocao e movimento. O evento gira ao redor da energia que ela cria no ambiente.',
-    image: '/fotos/Marceni.png',
+    image: '/fotos/Marceni.webp',
   },
   {
     name: 'Isabela',
     role: 'Palestra sobre Lei da Atracao e construcao de clima',
     body: 'Ajuda a construir a atmosfera, a organizacao e a energia do encontro para que a experiencia seja leve, humana e memoravel.',
-    image: '/fotos/isabela.jpeg',
+    image: '/fotos/isabela.webp',
   },
   {
     name: 'Fabio Pantoja',
     role: 'Estrategista e especialista em IA para negocios',
     body: 'Leva para o palco uma demo ao vivo de como tecnologia vira experiencia, repertorio pratico e oportunidade real.',
-    image: '/fotos/pantoja.jpg',
+    image: '/fotos/pantoja.webp',
   },
 ] as const;
 

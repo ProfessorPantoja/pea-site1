@@ -57,3 +57,54 @@ Log numerado das mudancas pedidas a partir desta etapa do projeto.
 **Acao:** movi os arquivos para `public/fotos`, substitui as fotos remotas dos palestrantes pelas imagens reais locais e troquei o simbolo textual pela logo real no header, footer e favicon.
 
 **Status:** concluido
+
+## 006
+
+**Pedido:** adaptar o script local de otimizacao e passar nas midias atuais do projeto.
+
+**Acao:** converti o script para operar em `public/fotos` e `public/video`, gerei versoes `webp` para as imagens e `-optimized.mp4` para os videos, e atualizei o site para usar as imagens locais otimizadas no hero, na logo e na secao de palestrantes.
+
+**Status:** concluido
+
+## 007
+
+**Pedido:** registrar explicitamente no log a adicao dos videos e da nova foto do hero.
+
+**Acao:** documentado que, nesta etapa, foram adicionados ao projeto:
+
+- a nova imagem de hero `public/fotos/foto-hero.jpg`
+- os videos `public/video/1.mp4`, `public/video/2.mp4`, `public/video/3.mp4` e `public/video/4.mp4`
+- o script local `scripts/optimize-media.sh`, trazido para dentro deste repositorio
+
+**Resultado associado:** essas midias passaram a fazer parte da base do projeto, e a foto do hero entrou no fluxo de otimizacao e uso da interface.
+
+**Status:** concluido
+
+## 008
+
+**Pedido:** reduzir ainda mais o video teaser mais pesado, por estar grande demais para uma landing page.
+
+**Acao:** ajustado o script de otimizacao para tratar especificamente o `public/video/3.mp4` com um perfil mais agressivo para prova social:
+
+- escala reduzida para `480p`
+- frame rate reduzido para `24fps`
+- compressao mais forte com `crf 37`
+- sem audio, mantendo foco em clima visual
+
+**Objetivo:** baixar significativamente o peso do arquivo sem depender de autoplay nem de preloading pesado quando esse video entrar na interface.
+
+**Status:** concluido
+
+## 009
+
+**Pedido:** manter som em todos os videos otimizados, porque nesta landing eles serao usados na secao de edicoes anteriores e nao como fundo mudo.
+
+**Acao:** ajustado o script para preservar audio comprimido em todos os `*-optimized.mp4`:
+
+- `1`, `2` e `4` agora usam perfil equilibrado com audio `aac` a `96k`
+- `3` manteve o perfil mais leve de video, mas passou a incluir audio `aac` a `64k`
+- mantida a compressao mais agressiva apenas no `3`, como combinado
+
+**Objetivo:** permitir reproducao com som na secao de prova social sem voltar aos arquivos brutos originais.
+
+**Status:** concluido
