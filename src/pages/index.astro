@@ -8,6 +8,7 @@ import SocialProofSection from '../components/sections/SocialProofSection.astro'
 import LiaSection from '../components/sections/LiaSection.astro';
 import TicketSection from '../components/sections/TicketSection.astro';
 import FinalSection from '../components/sections/FinalSection.astro';
+import SectionBridge from '../components/SectionBridge.astro';
 ---
 
 <BaseLayout>
@@ -15,8 +16,26 @@ import FinalSection from '../components/sections/FinalSection.astro';
   <PillarsSection />
   <AudienceSection />
   <HostsSection />
+  <SectionBridge
+    tone="light"
+    kicker="Edições anteriores"
+    title="Agora veja o que já aconteceu nas outras edições."
+    body="Antes de decidir, vale sentir o clima real de quem já viveu o Pessoas em Ação."
+  />
   <SocialProofSection />
+  <SectionBridge
+    tone="soft"
+    kicker="Tire dúvidas agora"
+    title="Se qualquer pergunta aparecer, a LIA entra aqui."
+    body="Ela atende no WhatsApp e ajuda você a entender ingresso, horário, local e perfil do público."
+  />
   <LiaSection />
+  <SectionBridge
+    tone="dark"
+    kicker="Próximo passo"
+    title="Quando fizer sentido para você, é hora de garantir sua vaga."
+    body="Aqui a curiosidade vira decisão, com uma transição mais clara para a parte comercial da landing."
+  />
   <TicketSection />
   <FinalSection />
 </BaseLayout>

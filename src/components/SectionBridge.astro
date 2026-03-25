@@ -1,0 +1,29 @@
+---
+interface Props {
+  kicker: string;
+  title: string;
+  body?: string;
+  tone?: 'light' | 'soft' | 'dark';
+}
+
+const { kicker, title, body, tone = 'light' } = Astro.props;
+---
+
+<div class="section-bridge-wrap">
+  <div class="shell">
+    <div
+      data-reveal
+      class:list={[
+        'reveal-ready section-bridge',
+        tone === 'soft' && 'section-bridge--soft',
+        tone === 'dark' && 'section-bridge--dark',
+      ]}
+    >
+      <div class="section-bridge__inner">
+        <span class="section-bridge__kicker">{kicker}</span>
+        <p class="section-bridge__title">{title}</p>
+        {body && <p class="section-bridge__body">{body}</p>}
+      </div>
+    </div>
+  </div>
+</div>

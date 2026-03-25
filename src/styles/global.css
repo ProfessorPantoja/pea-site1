@@ -246,6 +246,109 @@ body::before {
       radial-gradient(circle at 82% 16%, rgba(93, 189, 240, 0.16), transparent 30%),
       rgba(247, 245, 248, 0.96);
   }
+
+  .section-bridge-wrap {
+    @apply relative z-20 -my-8 sm:-my-10 lg:-my-12;
+  }
+
+  .section-bridge {
+    @apply relative overflow-hidden rounded-[2.6rem] px-6 py-8 shadow-soft ring-1 ring-white/70 backdrop-blur-xl sm:px-8 sm:py-9;
+    background:
+      radial-gradient(circle at 14% 18%, rgba(235, 133, 153, 0.14), transparent 28%),
+      radial-gradient(circle at 86% 22%, rgba(93, 189, 240, 0.16), transparent 30%),
+      rgba(255, 255, 255, 0.82);
+  }
+
+  .section-bridge::before,
+  .section-bridge::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 118%;
+    height: 3.5rem;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+
+  .section-bridge::before {
+    top: -2.2rem;
+    border-bottom-left-radius: 50% 100%;
+    border-bottom-right-radius: 50% 100%;
+    background:
+      linear-gradient(180deg, rgba(248, 245, 248, 0), rgba(255, 255, 255, 0.62)),
+      radial-gradient(circle at 24% 100%, rgba(235, 133, 153, 0.14), transparent 36%),
+      radial-gradient(circle at 76% 100%, rgba(93, 189, 240, 0.14), transparent 36%);
+  }
+
+  .section-bridge::after {
+    bottom: -2.2rem;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    background:
+      linear-gradient(0deg, rgba(248, 245, 248, 0), rgba(255, 255, 255, 0.62)),
+      radial-gradient(circle at 24% 0%, rgba(235, 133, 153, 0.14), transparent 36%),
+      radial-gradient(circle at 76% 0%, rgba(93, 189, 240, 0.14), transparent 36%);
+  }
+
+  .section-bridge--soft {
+    background:
+      radial-gradient(circle at 16% 18%, rgba(235, 133, 153, 0.16), transparent 30%),
+      radial-gradient(circle at 84% 18%, rgba(93, 189, 240, 0.18), transparent 32%),
+      rgba(245, 243, 247, 0.92);
+  }
+
+  .section-bridge--dark {
+    @apply ring-white/10;
+    background:
+      radial-gradient(circle at 18% 24%, rgba(235, 133, 153, 0.2), transparent 30%),
+      radial-gradient(circle at 84% 16%, rgba(93, 189, 240, 0.16), transparent 28%),
+      linear-gradient(135deg, rgba(47, 45, 49, 0.98), rgba(83, 41, 55, 0.94));
+    box-shadow:
+      0 24px 58px rgba(47, 45, 49, 0.26),
+      inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  }
+
+  .section-bridge--dark::before {
+    background:
+      linear-gradient(180deg, rgba(248, 245, 248, 0), rgba(47, 45, 49, 0.7)),
+      radial-gradient(circle at 24% 100%, rgba(235, 133, 153, 0.18), transparent 38%),
+      radial-gradient(circle at 76% 100%, rgba(93, 189, 240, 0.16), transparent 38%);
+  }
+
+  .section-bridge--dark::after {
+    background:
+      linear-gradient(0deg, rgba(47, 45, 49, 0), rgba(47, 45, 49, 0.76)),
+      radial-gradient(circle at 24% 0%, rgba(235, 133, 153, 0.18), transparent 38%),
+      radial-gradient(circle at 76% 0%, rgba(93, 189, 240, 0.16), transparent 38%);
+  }
+
+  .section-bridge__inner {
+    @apply relative mx-auto max-w-3xl text-center;
+  }
+
+  .section-bridge__kicker {
+    @apply inline-flex items-center rounded-full bg-ink px-4 py-2 text-[0.68rem] font-extrabold uppercase tracking-[0.2em] text-white;
+  }
+
+  .section-bridge__title {
+    @apply mt-5 text-3xl font-extrabold leading-tight tracking-[-0.04em] text-ink sm:text-4xl;
+  }
+
+  .section-bridge__body {
+    @apply mx-auto mt-4 max-w-2xl text-base leading-8 text-ink-soft;
+  }
+
+  .section-bridge--dark .section-bridge__kicker {
+    @apply bg-white text-ink;
+  }
+
+  .section-bridge--dark .section-bridge__title {
+    @apply text-white;
+  }
+
+  .section-bridge--dark .section-bridge__body {
+    @apply text-white/70;
+  }
 }
 
 [data-site-header].is-scrolled {

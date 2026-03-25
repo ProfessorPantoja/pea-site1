@@ -193,3 +193,13 @@ Log numerado das mudancas pedidas a partir desta etapa do projeto.
 **Objetivo:** deixar o site com leitura mais premium, reduzir sensação de repetição e tornar cada bloco mais compreensível antes da próxima rodada de refinos.
 
 **Status:** concluido
+
+## 018
+
+**Pedido:** resolver a questão dos divisores entre seções, criando transições menos retas e mais premium entre os blocos principais da landing.
+
+**Acao:** criado um sistema reutilizável de transição com o novo componente `SectionBridge.astro`, incluindo três variações de tom (`light`, `soft` e `dark`) com curvas superiores e inferiores, textura leve e texto editorial curto para anunciar a mudança de assunto. Esse sistema foi aplicado entre `Quem conduz -> Prova social`, `Prova social -> LIA` e `LIA -> Ingresso`. Também foram removidas as curvas soltas antigas de `SocialProofSection` e `LiaSection` para evitar redundância e deixar a hierarquia mais controlada.
+
+**Objetivo:** fazer cada virada de assunto ficar evidente sem parecer brusca, elevando a percepção de acabamento premium da landing.
+
+**Status:** concluido
