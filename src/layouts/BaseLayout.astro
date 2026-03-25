@@ -9,8 +9,8 @@ interface Props {
 }
 
 const {
-  title = 'Pessoas em Acao - 6a edicao oficial',
-  description = 'Landing page oficial do evento Pessoas em Acao: networking, conhecimento e entretenimento em Cabo Frio.',
+  title = 'Pessoas em Ação - 6ª edição oficial',
+  description = 'Landing page oficial do evento Pessoas em Ação: networking, conhecimento e entretenimento em Cabo Frio.',
 } = Astro.props;
 
 const siteUrl = 'https://pessoas-em-acao.vercel.app';
@@ -32,7 +32,7 @@ const ogImage = `${siteUrl}/fotos/og-pea.png`;
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={siteUrl} />
-    <meta property="og:site_name" content="Pessoas em Acao" />
+    <meta property="og:site_name" content="Pessoas em Ação" />
     <meta property="og:image" content={ogImage} />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
@@ -47,7 +47,7 @@ const ogImage = `${siteUrl}/fotos/og-pea.png`;
       href="#conteudo"
       class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-white focus:px-5 focus:py-3 focus:font-bold focus:text-ink"
     >
-      Ir para o conteudo
+      Ir para o conteúdo
     </a>
     <NavBar />
     <main id="conteudo">

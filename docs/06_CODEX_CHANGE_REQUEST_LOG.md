@@ -173,3 +173,13 @@ Log numerado das mudancas pedidas a partir desta etapa do projeto.
 **Objetivo:** melhorar compreensao imediata da proposta, usar prova social real sem pesar no carregamento e garantir compartilhamento com imagem correta no WhatsApp.
 
 **Status:** concluido
+
+## 016
+
+**Pedido:** fazer um pente fino em toda a acentuação do site, corrigindo textos visíveis para o português do Brasil.
+
+**Acao:** revisadas e corrigidas as strings visíveis em `site.ts`, layout e seções da landing, incluindo título, descrições, CTAs, navegação, textos da LIA, prova social, ingresso e rodapé.
+
+**Objetivo:** deixar a comunicação mais profissional, natural e correta para o público brasileiro.
+
+**Status:** concluido

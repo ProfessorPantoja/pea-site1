@@ -1,24 +1,24 @@
 // Placeholder content for the prototype. Replace contact and date details when the official data is approved.
 export const eventMeta = {
-  name: 'Pessoas em Acao',
-  editionLabel: '6a edicao do Pessoas em Acao',
+  name: 'Pessoas em Ação',
+  editionLabel: '6ª edição do Pessoas em Ação',
   dateDisplay: '2 de maio de 2026',
   city: 'Cabo Frio, RJ',
-  duration: '5 horas de experiencia',
+  duration: '5 horas de experiência',
   capacity: 'Apenas 100 vagas',
   price: 'R$150',
   instagramHandle: '@pessoas.em.acao.oficial',
   instagramUrl: 'https://www.instagram.com/pessoas.em.acao.oficial/',
   email: 'pessoas.em.acao.oficial@gmail.com',
   whatsappTicketUrl:
-    'https://wa.me/5522998946111?text=Ola%2C%20vim%20do%20site%20e%20quero%20garantir%20minha%20vaga%20no%20Pessoas%20em%20Acao.',
+    'https://wa.me/5522998946111?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20quero%20garantir%20minha%20vaga%20no%20Pessoas%20em%20A%C3%A7%C3%A3o.',
   whatsappSupportUrl:
-    'https://wa.me/5522998946111?text=Ola%2C%20vim%20do%20site%20e%20gostaria%20de%20falar%20com%20alguem%20para%20entender%20melhor%20o%20evento.',
+    'https://wa.me/5522998946111?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20falar%20com%20algu%C3%A9m%20para%20entender%20melhor%20o%20evento.',
 };
 
 export const navLinks = [
   { href: '#evento', label: 'O evento' },
-  { href: '#publico', label: 'Para quem' },
+  { href: '#publico', label: 'Para quem é' },
   { href: '#conduz', label: 'Quem conduz' },
   { href: '#prova-social', label: 'Prova social' },
   { href: '#lia', label: 'LIA' },
@@ -29,59 +29,59 @@ export const liaMeta = {
   name: 'LIA',
   role: 'Atendente inteligente do evento',
   botUrl:
-    'https://wa.me/5527992681959?text=Oi%2C%20LIA.%20Vim%20do%20site%20e%20quero%20mais%20informacoes%20sobre%20o%20Pessoas%20em%20Acao.',
+    'https://wa.me/5527992681959?text=Oi%2C%20LIA.%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Pessoas%20em%20A%C3%A7%C3%A3o.',
   badge: 'Atendimento IA',
-  headline: 'A LIA responde suas duvidas sobre o evento em segundos.',
+  headline: 'A LIA responde às suas dúvidas sobre o evento em segundos.',
   body:
-    'Se voce quer entender ingresso, horario, publico, local, dinamica do encontro ou simplesmente saber se esse evento faz sentido para voce, a LIA entra para orientar sem friccao.',
+    'Se você quer entender ingresso, horário, público, local, dinâmica do encontro ou simplesmente saber se esse evento faz sentido para você, a LIA entra para orientar sem fricção.',
   ctaLabel: 'Falar com a LIA agora',
-  floatingLabel: 'Duvidas? Chame a LIA',
+  floatingLabel: 'Dúvidas? Chame a LIA',
 } as const;
 
 export const liaHighlights = [
-  'Tira duvidas do evento em tempo real',
+  'Tira dúvidas do evento em tempo real',
   'Explica ingresso, acesso e formato',
-  'Ajuda quem ainda esta indeciso',
-  'Encaminha a conversa para a acao',
+  'Ajuda quem ainda está indeciso',
+  'Encaminha a conversa para a ação',
 ] as const;
 
 export const liaQuestions = [
-  'Que horas comeca o evento?',
-  'O que esta incluso no ingresso?',
-  'Esse evento e para mim?',
+  'Que horas começa o evento?',
+  'O que está incluso no ingresso?',
+  'Esse evento é para mim?',
   'Como eu garanto minha vaga?',
 ] as const;
 
 export const heroStats = [
-  { value: '6a edicao', label: 'do Pessoas em Acao' },
+  { value: '6ª edição', label: 'do Pessoas em Ação' },
   { value: '100', label: 'vagas presenciais' },
-  { value: '5h', label: 'de experiencia ao vivo' },
-  { value: 'IA + networking', label: 'conteudo e conexao real' },
+  { value: '5h', label: 'de experiência ao vivo' },
+  { value: 'IA + networking', label: 'conteúdo e conexão real' },
 ] as const;
 
 export const heroRibbon = [
   'Networking de verdade',
-  'Conhecimento pratico',
-  'Experiencia memoravel',
+  'Conhecimento prático',
+  'Experiência memorável',
   'Demo de IA ao vivo',
   'Cabo Frio, RJ',
-  'Energia alta do inicio ao fim',
+  'Energia alta do início ao fim',
 ] as const;
 
 export const pillars = [
   {
     title: 'Acesso',
-    body: 'Entre num ambiente e numa rede que normalmente nao estariam ao seu alcance.',
+    body: 'Entre num ambiente e numa rede que normalmente não estariam ao seu alcance.',
     accent: 'rose',
   },
   {
     title: 'Ambiente',
-    body: 'Local bonito, energia alta, comida liberada e uma experiencia que faz voce querer estar ali do inicio ao fim.',
+    body: 'Local bonito, energia alta, comida liberada e uma experiência que faz você querer estar ali do início ao fim.',
     accent: 'sky',
   },
   {
-    title: 'Transformacao',
-    body: 'Voce nao sai so inspirado. Voce sai com ideias, conexoes e experiencias que pode aplicar no dia seguinte.',
+    title: 'Transformação',
+    body: 'Você não sai só inspirado. Você sai com ideias, conexões e experiências que pode aplicar no dia seguinte.',
     accent: 'ink',
   },
 ] as const;
@@ -89,75 +89,75 @@ export const pillars = [
 export const audienceCards = [
   {
     title: 'Empreendedoras',
-    body: 'Cansadas de crescer sozinhas. Precisam de conexoes que virem negocio, visao e movimento.',
-    tag: 'rede, negocio, merecimento',
+    body: 'Cansadas de crescer sozinhas. Precisam de conexões que virem negócio, visão e movimento.',
+    tag: 'rede, negócio, merecimento',
   },
   {
     title: 'Empreendedores e profissionais',
-    body: 'Sentem estagnacao. Querem resultado, repertorio novo e contatos que realmente abrem portas.',
-    tag: 'resultado, repertorio, destravar',
+    body: 'Sentem estagnação. Querem resultado, repertório novo e contatos que realmente abrem portas.',
+    tag: 'resultado, repertório, destravar',
   },
   {
-    title: 'Jovens com ambicao',
-    body: 'Querem entrar no ambiente certo, cercados por gente que esta construindo algo de verdade.',
-    tag: 'referencia, ambiente, futuro',
+    title: 'Jovens com ambição',
+    body: 'Querem entrar no ambiente certo, cercados por gente que está construindo algo de verdade.',
+    tag: 'referência, ambiente, futuro',
   },
 ] as const;
 
 export const hosts = [
   {
     name: 'Marceni',
-    role: 'Psicologa, palestrante principal e alma do evento',
-    body: 'Conduz a experiencia com foco em conexao, emocao e movimento. O evento gira ao redor da energia que ela cria no ambiente.',
+    role: 'Psicóloga, palestrante principal e alma do evento',
+    body: 'Conduz a experiência com foco em conexão, emoção e movimento. O evento gira ao redor da energia que ela cria no ambiente.',
     image: '/fotos/Marceni.webp',
   },
   {
     name: 'Isabela',
-    role: 'Palestra sobre Lei da Atracao e construcao de clima',
-    body: 'Ajuda a construir a atmosfera, a organizacao e a energia do encontro para que a experiencia seja leve, humana e memoravel.',
+    role: 'Palestra sobre Lei da Atração e construção de clima',
+    body: 'Ajuda a construir a atmosfera, a organização e a energia do encontro para que a experiência seja leve, humana e memorável.',
     image: '/fotos/isabela.webp',
   },
   {
     name: 'Fabio Pantoja',
-    role: 'Estrategista e especialista em IA para negocios',
-    body: 'Leva para o palco uma demo ao vivo de como tecnologia vira experiencia, repertorio pratico e oportunidade real.',
+    role: 'Estrategista e especialista em IA para negócios',
+    body: 'Leva para o palco uma demo ao vivo de como tecnologia vira experiência, repertório prático e oportunidade real.',
     image: '/fotos/pantoja.webp',
   },
 ] as const;
 
 export const proofMetrics = [
-  { value: '5', label: 'edicoes anteriores' },
+  { value: '5', label: 'edições anteriores' },
   { value: 'centenas', label: 'de pessoas impactadas' },
-  { value: 'nova fase', label: 'mesma essencia' },
+  { value: 'nova fase', label: 'mesma essência' },
 ] as const;
 
 export const proofTiles = [
   {
-    title: 'Conexoes que continuam depois do evento',
+    title: 'Conexões que continuam depois do evento',
     body: 'O tipo de encontro que segue rendendo conversa, parceria e proximidade nos dias seguintes.',
   },
   {
     title: 'Aprendizado que sai do palco e vai para a vida real',
-    body: 'A experiencia foi desenhada para gerar aplicacao pratica, nao so inspiracao momentanea.',
+    body: 'A experiência foi desenhada para gerar aplicação prática, não só inspiração momentânea.',
   },
   {
     title: 'Ambiente que faz as pessoas se abrirem',
-    body: 'Quando o clima esta certo, a energia muda. E isso acelera troca, confianca e oportunidade.',
+    body: 'Quando o clima está certo, a energia muda. E isso acelera troca, confiança e oportunidade.',
   },
 ] as const;
 
 export const proofVideos = [
   {
-    title: 'Clima real das edicoes anteriores',
-    body: 'Um recorte rapido para sentir energia, publico e atmosfera do Pessoas em Acao.',
+    title: 'Clima real das edições anteriores',
+    body: 'Um recorte rápido para sentir energia, público e atmosfera do Pessoas em Ação.',
     src: '/video/1-optimized.mp4',
     preload: 'metadata',
     poster: '/fotos/og-pea.png',
     duration: '32s',
   },
   {
-    title: 'Publico e ambiente',
-    body: 'Pessoas conectando, vivendo a experiencia e entrando no ritmo do encontro.',
+    title: 'Público e ambiente',
+    body: 'Pessoas conectando, vivendo a experiência e entrando no ritmo do encontro.',
     src: '/video/2-optimized.mp4',
     preload: 'none',
     poster: '/fotos/og-pea.png',
@@ -172,8 +172,8 @@ export const proofVideos = [
     duration: '1min',
   },
   {
-    title: 'Experiencia em movimento',
-    body: 'Mais um recorte de palco, publico e emocao para reduzir duvida e aumentar confianca.',
+    title: 'Experiência em movimento',
+    body: 'Mais um recorte de palco, público e emoção para reduzir dúvida e aumentar confiança.',
     src: '/video/4-optimized.mp4',
     preload: 'none',
     poster: '/fotos/og-pea.png',
@@ -183,9 +183,9 @@ export const proofVideos = [
 
 export const ticketItems = [
   'Entrada no evento presencial',
-  'Alimentacao livre durante todo o periodo',
+  'Alimentação livre durante todo o período',
   '4 palestras',
-  'Dinamicas e sorteios',
+  'Dinâmicas e sorteios',
   'Networking qualificado',
-  'Experiencia completa',
+  'Experiência completa',
 ] as const;
