@@ -217,3 +217,29 @@ Tambem foi feito `push` para `main` e deploy em producao na Vercel, com atualiza
 **Objetivo:** deixar o primeiro contato com a LIA mais limpo e imediato, preservando o contexto de que o usuario veio da landing page.
 
 **Status:** concluido
+
+## 020
+
+**Pedido:** mudar o valor do ingresso para `R$100` e deixar claro na landing que buffet / coffee break nao esta incluso no ingresso e sera pago separadamente no dia do evento.
+
+**Acao:** atualizado o preco base do evento para `R$100`, revisados os textos do hero e da secao de ingresso para remover qualquer leitura de alimentacao inclusa, e adicionado um aviso explicito no card de ingresso com a mensagem:
+
+`Buffet / coffee break e separado e o pagamento e feito na hora do evento.`
+
+Tambem foi feito `push` para `main` e deploy em producao na Vercel, com atualizacao publicada em `https://pea-site.vercel.app`.
+
+**Objetivo:** alinhar a comunicacao comercial com a regra real do evento, evitando promessa errada sobre inclusoes do ingresso.
+
+**Status:** concluido
+
+## 021
+
+**Pedido:** ajustar a nomenclatura do aviso de alimentacao para usar o nome correto `cafe colonial`.
+
+**Acao:** atualizado o aviso do card de ingresso para trocar `buffet / coffee break` por `cafe colonial`, ficando com a comunicacao:
+
+`O cafe colonial e separado e o pagamento e feito na hora do evento.`
+
+**Objetivo:** usar o nome real da oferta de alimentacao e evitar ambiguidade na comunicacao comercial do site.
+
+**Status:** concluido

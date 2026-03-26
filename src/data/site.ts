@@ -238,6 +238,6 @@ export const ticketItems = [
 ] as const;
 
 export const ticketNotice = {
-  title: 'Importante sobre alimentação',
-  body: 'Buffet / coffee break é separado e o pagamento é feito na hora do evento.',
+  title: 'Importante sobre o café colonial',
+  body: 'O café colonial é separado e o pagamento é feito na hora do evento.',
 } as const;
