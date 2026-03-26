@@ -12,7 +12,7 @@ export const eventMeta = {
   city: 'Cabo Frio, RJ',
   duration: '5 horas de experiência',
   capacity: 'Apenas 100 vagas',
-  price: 'R$150',
+  price: 'R$100',
   year: '2026',
   instagramHandle: '@pessoas.em.acao.oficial',
   instagramUrl: 'https://www.instagram.com/pessoas.em.acao.oficial/',
@@ -99,7 +99,7 @@ export const heroStats = [
 export const heroHighlights = [
   'Networking de verdade',
   'Demo de IA ao vivo',
-  'Comida liberada',
+  'Ambiente premium',
   'Energia alta',
 ] as const;
 
@@ -120,7 +120,7 @@ export const pillars = [
   },
   {
     title: 'Ambiente',
-    body: 'Local bonito, energia alta, comida liberada e uma experiência que faz você querer estar ali do início ao fim.',
+    body: 'Local bonito, energia alta e uma experiência que faz você querer estar ali do início ao fim.',
     accent: 'sky',
   },
   {
@@ -230,9 +230,14 @@ export const proofVideos = [
 
 export const ticketItems = [
   'Entrada no evento presencial',
-  'Alimentação livre durante todo o período',
   '4 palestras',
   'Dinâmicas e sorteios',
   'Networking qualificado',
-  'Experiência completa',
+  'Ambiente preparado para conexões reais',
+  'Experiência presencial completa',
 ] as const;
+
+export const ticketNotice = {
+  title: 'Importante sobre alimentação',
+  body: 'Buffet / coffee break é separado e o pagamento é feito na hora do evento.',
+} as const;
