@@ -203,3 +203,17 @@ Log numerado das mudancas pedidas a partir desta etapa do projeto.
 **Objetivo:** fazer cada virada de assunto ficar evidente sem parecer brusca, elevando a percepção de acabamento premium da landing.
 
 **Status:** concluido
+
+## 019
+
+**Pedido:** alterar a mensagem padrão do botão da LIA para um texto mais direto sobre a origem do contato e publicar a mudança no site.
+
+**Acao:** atualizada a mensagem principal do WhatsApp da LIA em `src/data/site.ts` para:
+
+`Oi, LIA. Vim do site do Pessoas em Ação.`
+
+Tambem foi feito `push` para `main` e deploy em producao na Vercel, com atualizacao publicada em `https://pea-site.vercel.app`.
+
+**Objetivo:** deixar o primeiro contato com a LIA mais limpo e imediato, preservando o contexto de que o usuario veio da landing page.
+
+**Status:** concluido
