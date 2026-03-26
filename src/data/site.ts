@@ -41,7 +41,7 @@ export const liaMeta = {
   role: 'Assistente de IA do evento',
   botUrl: buildWhatsappUrl(
     liaPhone,
-    'Oi, LIA. Vim do site e quero mais informações sobre o Pessoas em Ação.'
+    'Oi, LIA. Vim do site do Pessoas em Ação.'
   ),
   badge: 'Fale com a LIA',
   headline: 'A LIA responde às suas dúvidas sobre o evento em segundos.',
